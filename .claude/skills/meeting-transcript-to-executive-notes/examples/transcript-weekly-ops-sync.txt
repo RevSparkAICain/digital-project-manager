@@ -1,0 +1,68 @@
+Weekly Ops Sync, March 12, 2030
+Speaker 1: Okay, let's get started. Morning, everyone.
+Speaker 4: Morning. Did anyone do anything fun over the weekend?
+Speaker 2: I took the kids hiking. The weather was perfect.
+Speaker 1: Nice. I stayed in and caught up on laundry. Okay, agenda. The ticket migration, the database upgrade, the monitoring vendor renewal, and the retention schedule. Sam covers the policy side on that last one. In that order.
+Speaker 1: Jordan, where are we on the ticket migration?
+Speaker 2: So the jeer a migration is on track for cutover on April 2. All the queue mappings are built, and I tested the new intake form twice.
+Speaker 1: Any risk to the April 2 date?
+Speaker 2: Only if the intake testing slips, and I don't see that happening.
+Speaker 2: My plan is to keep the old ticket queues open for both reading and writing for sixty days after cutover, so agents can finish anything in flight.
+Speaker 4: Sixty days of two systems means sixty days of paying for two licenses. That adds up.
+Speaker 2: Right, but if we cut hard, any ticket in flight gets stranded.
+Speaker 1: How many tickets are in flight on a typical day?
+Speaker 2: Around forty, give or take. Not hundreds.
+Speaker 4: Forty tickets doesn't justify two months of double licensing.
+Speaker 2: Fair point. Honestly, if we freeze new intake on the old system the week before cutover, the ones in flight close out on their own. I'm fine dropping the parallel run.
+Speaker 1: So we agree. No parallel run. New intake on the old system freezes the week before cutover, and the old queues go read-only at cutover.
+Speaker 2: Agreed.
+Speaker 4: Good. That also keeps the license bill where we planned it.
+Speaker 1: Jordan, can you send the agents a freeze notice by March 26?
+Speaker 2: Yes, I'll send it by March 26. I'll also update the wording on the intake form for the new queue names, no rush on that one.
+Speaker 1: Thanks, Jordan.
+Speaker 3: One more thing on that. The old system's ticket export has to be archived before it goes read-only, and I don't think anyone owns it.
+Speaker 1: Priya, can your team take it?
+Speaker 3: Yes, I'll own the archive and have it done by April 1.
+Speaker 2: Let me know when it's done so I can switch the queues over.
+Speaker 3: Will do.
+Speaker 1: Good. Priya, the database upgrade.
+Speaker 3: The post gress upgrade is going well. About 70% of the databases are already on the new version. What's left is the three reporting databases.
+Speaker 4: Is the rest stable?
+Speaker 3: Yes. No incidents since the first batch moved.
+Speaker 1: What's holding the reporting ones up?
+Speaker 3: They depend on a vendor driver that isn't certified for the new version yet.
+Speaker 4: If the driver isn't certified, should we just wait?
+Speaker 3: I don't want to guess. I need a date from the vendor first. Let's leave it there for now and come back to it after the renewal, because it ties into their contract.
+Speaker 1: Fine. Alex, the monitoring vendor renewal.
+Speaker 4: Their quote went up, and they want a signed order by April 5. I think we should push back on the price before we sign anything.
+Speaker 1: Agreed. Nothing gets signed until the price is settled.
+Speaker 4: I'll handle the price conversation with them myself. I won't have time for the paperwork on top of that.
+Speaker 1: We should also tell them in writing by March 29 that we're negotiating, so they don't treat silence as a yes.
+Speaker 4: Right. Someone needs to send that. I'm not sure who.
+Speaker 3: Do you want me on the price call? I have our usage numbers.
+Speaker 4: Not yet. I'll ask if I need them.
+Speaker 1: Okay, leave the owner open for now.
+Speaker 5: Before we sign anything, I'd read the full contract. Their terms on data deletion look different from ours.
+Speaker 3: Related to that, they're pitching an AI summarizer add-on for alert noise. Is that covered by our data terms? I don't know.
+Speaker 1: Nobody knows yet. Park it as a question.
+Speaker 5: Same for the contract. I'd want the answer before we sign.
+Speaker 4: And if the price talks run long, we could blow through their April 5 date.
+Speaker 1: Yes, that's a risk.
+Speaker 3: Should we ask for an extension now?
+Speaker 4: Let's see how the first conversation goes.
+Speaker 1: Chief of Staff, when you log these, mark the renewal notice as high priority.
+Speaker 1: Retention schedule next. Policy side, can you compare our schedule against the new vendor terms?
+Speaker 5: Yes. Their default deletes stored logs at twelve months, and ours says twenty-four. I'll have the comparison done by March 22.
+Speaker 1: Can they change that default?
+Speaker 5: I don't know. That goes in the comparison.
+Speaker 1: Good.
+Speaker 4: If they delete at twelve months, we lose logs we're supposed to keep for another year.
+Speaker 1: Yes, that's a risk too. Okay, back to the database item. Priya, any news?
+Speaker 3: Yes. I pinged the vendor this morning. They replied, and they said the driver certification comes next quarter, with no firm date.
+Speaker 4: Then keep the three reporting databases on the old version until it's certified.
+Speaker 3: Agreed. I'll keep them where they are and ask the vendor for a firm date by March 19.
+Speaker 1: Okay. So the reporting databases stay put until the driver is certified.
+Speaker 2: Jane, can I ask about the intake form? Do you want the new queue names in the dropdown, or typed in?
+Speaker 1: Dropdown. That's in the wording update you already took.
+Speaker 2: Got it.
+Speaker 1: Anything else? No? Thanks, everyone. Have a good week.

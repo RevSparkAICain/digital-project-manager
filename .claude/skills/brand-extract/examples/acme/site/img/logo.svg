@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+  <title>ACME Co. logo (fictional)</title>
+  <rect x="0" y="0" width="80" height="80" rx="12" fill="#C8102E"/>
+  <path d="M16 60 L40 18 L64 60 Z" fill="#F5EBDD"/>
+  <text x="96" y="52" font-family="Inter, sans-serif" font-size="34" font-weight="700" fill="#3A3F44">ACME</text>
+</svg>

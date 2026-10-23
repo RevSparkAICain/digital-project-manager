@@ -1,0 +1,67 @@
+{
+  "source": "tickets.xlsx",
+
+  "sheets": [
+    {"name": "Service Desk", "key_column": "Ticket"},
+    {"name": "Field Requests", "key_column": "Ticket",
+     "filters": [{"column": "In Scope", "not_in": ["N"], "not_blank": true}]}
+  ],
+
+  "stages": [
+    {"id": "total", "title": "All tickets",
+     "constant": {"node": "total", "label": "All tickets", "color": "total"}},
+
+    {"id": "type", "title": "Ticket type",
+     "nodes": [
+       {"id": "access", "label": "Access", "color": "neutral"},
+       {"id": "software", "label": "Software", "color": "neutral"},
+       {"id": "network", "label": "Network", "color": "neutral"},
+       {"id": "field", "label": "Field requests", "color": "neutral"},
+       {"id": "hardware", "label": "Hardware", "color": "neutral"}
+     ],
+     "assign": [
+       {"when": [{"sheet": "Field Requests"}], "node": "field"},
+       {"when": [{"column": "Type", "equals": "Access"}], "node": "access"},
+       {"when": [{"column": "Type", "equals": "Software"}], "node": "software"},
+       {"when": [{"column": "Type", "equals": "Hardware"}], "node": "hardware"},
+       {"when": [{"column": "Type", "equals": "Network"}], "node": "network"}
+     ]},
+
+    {"id": "status", "title": "Where it stands",
+     "nodes": [
+       {"id": "done", "label": "Resolved or closed", "color": "complete"},
+       {"id": "duplicate", "label": "Duplicate", "color": "dormant"},
+       {"id": "canceled", "label": "Canceled", "color": "excluded"},
+       {"id": "waiting", "label": "Waiting on customer", "color": "blocked"},
+       {"id": "in_progress", "label": "In progress", "color": "active"},
+       {"id": "queue", "label": "New, not started", "color": "pending_light"},
+       {"id": "bench", "label": "On the repair bench", "color": "pending_heavy"}
+     ],
+     "assign": [
+       {"when": [{"column": "Resolution", "equals": "Duplicate"}], "node": "duplicate"},
+       {"when": [{"column": "Status", "equals": "Canceled"}], "node": "canceled"},
+       {"when": [{"column": "Status", "in": ["Closed", "Resolved"]}], "node": "done"},
+       {"when": [{"column": "Status", "equals": "Waiting on Customer"}], "node": "waiting"},
+       {"when": [{"column": "Status", "equals": "In Progress"},
+                 {"stage": "type", "in": ["hardware"]}], "node": "bench"},
+       {"when": [{"column": "Status", "equals": "In Progress"}], "node": "in_progress"},
+       {"when": [{"column": "Status", "equals": "New"}], "node": "queue"}
+     ]}
+  ],
+
+  "groups": [
+    {"label": "Off the board", "nodes": ["done", "duplicate", "canceled"],
+     "color": "complete", "note": "no further desk effort"},
+    {"label": "With the customer", "nodes": ["waiting"], "color": "blocked"},
+    {"label": "Open: desk work", "nodes": ["in_progress", "queue"], "color": "active",
+     "note": "the queue the desk staffs against"},
+    {"label": "Open: bench repairs", "nodes": ["bench"], "color": "pending_heavy",
+     "note": "parts-dependent hardware work"}
+  ],
+
+  "palette": "restrained",
+  "title": "Where 400 support tickets landed",
+  "subtitle": "ACME Co. service desk, first quarter 2030, by ticket type and then by status",
+  "footer": "Source: tickets.xlsx, Service Desk (340) plus Field Requests in scope (60 of 80). Escalations excluded: same tickets under separate keys. Precedence: Duplicate, then Canceled, then Status.",
+  "prepared_by": "Prepared by Jane Doe, April 1, 2030"
+}

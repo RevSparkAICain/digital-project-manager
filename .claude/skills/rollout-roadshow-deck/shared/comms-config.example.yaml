@@ -1,0 +1,35 @@
+# Pod configuration for the comms agents and skills.
+#
+# Copy this file to comms-config.yaml in the same folder and replace the values with your
+# own. Every agent and skill in the comms pod reads comms-config.yaml first and falls back to
+# this example. Every value below is for the fictional ACME Co. Name roles here, never a
+# person: the pod writes "the IT Service Desk", not someone's name.
+
+bulletin:
+  name: IT Bulletin                       # display name of the bulletin
+  sender_role: IT Service Desk            # who sends; the pod produces drafts and never sends
+  sender_address: it-bulletin@acme.example  # shared mailbox the bulletin goes out from
+  signature_line: ACME IT Service Desk    # sign-off at the end of each bulletin
+  subject_prefix: "[IT Bulletin]"         # first part of every bulletin subject line
+
+channels:                                 # channels the plan may use; set enabled: false to drop one
+  - id: email
+    enabled: true
+  - id: teams
+    enabled: true
+  - id: team-meeting
+    enabled: true
+
+intranet:
+  present: false                          # false: the durable reference is an attached PDF
+
+telemetry:
+  open_rates: false                       # false: measurement wording turns conditional
+  click_rates: false
+
+time_zone: local                          # write times in local time
+requester_role: project lead              # who brings a change to the pod
+approver_role: IT manager                 # who approves a send
+example_persona: Warehouse Associate      # benchmark reader for examples
+brand_language_rules: none                # path to a claims-wording rules file, applied only when set
+output_dir: <WORKSPACE_ROOT>/deliverables/comms   # where drafts are saved

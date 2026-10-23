@@ -1,0 +1,1471 @@
+{
+  "findings_version": 1,
+  "config_version": "2030.1",
+  "as_of": "2030-03-12",
+  "prior_as_of": null,
+  "title": "ACME project portfolio health read",
+  "executive_reader_role": "VP of Operations",
+  "prepared_by": "Priya Shah",
+  "grade_statement": {
+    "measures": "Whether status reporting is current, new, consistent and correctly placed.",
+    "does_not_measure": "Whether any project will finish on time."
+  },
+  "cleanup_subtitle": "Record corrections in your own lists. Each line is something you can change yourself, and each project name links to its list. This page is about the record, not the work.",
+  "complete": false,
+  "portfolio": {
+    "grade": "C",
+    "provisional": true,
+    "points_note": "Project points: aging 1, stale 2, absent 2, repeated 2, placeholder 2, misaligned 2, minor 1, conflicting 2. Letters: A at 0, B up to 1, C up to 3, D up to 5, F above 5 or when the list was set up and never used.",
+    "reasons": [
+      "2 of 10 projects have no current status, above the 10 percent line",
+      "6 of 12 projects and lists have a color or record issue, above the 20 percent line"
+    ],
+    "reason_keys": [
+      "c_currency_fail_over",
+      "c_color_or_records_over"
+    ],
+    "prior_grade": null,
+    "reasons_changed": false,
+    "in_scope_count": 10,
+    "shares": {
+      "currency_fail": 0.2,
+      "newness_fail": 0.2,
+      "color_fail": 0.2,
+      "color_or_records_issue": 0.5
+    }
+  },
+  "inventory": {
+    "active": [
+      {
+        "project_id": "DEMO-409",
+        "name": "Intranet page refresh - Jane Doe",
+        "url": "https://tracker.example.internal/list/DEMO-409"
+      },
+      {
+        "project_id": "DEMO-403",
+        "name": "New hire welcome pack refresh - Priya Shah",
+        "url": "https://tracker.example.internal/list/DEMO-403"
+      },
+      {
+        "project_id": "DEMO-408",
+        "name": "Payroll report refresh - Jane Doe",
+        "url": "https://tracker.example.internal/list/DEMO-408"
+      },
+      {
+        "project_id": "DEMO-402",
+        "name": "Furniture inventory reconciliation - Alex Rivera",
+        "url": "https://tracker.example.internal/list/DEMO-402"
+      },
+      {
+        "project_id": "DEMO-410",
+        "name": "Meeting room booking rollout - Alex Rivera",
+        "url": "https://tracker.example.internal/list/DEMO-410"
+      },
+      {
+        "project_id": "DEMO-405",
+        "name": "Training library inventory - Jane Doe",
+        "url": "https://tracker.example.internal/list/DEMO-405"
+      },
+      {
+        "project_id": "DEMO-404",
+        "name": "Visitor parking redesign - Sam Okafor",
+        "url": "https://tracker.example.internal/list/DEMO-404"
+      },
+      {
+        "project_id": "DEMO-407",
+        "name": "Annual handbook review - Priya Shah",
+        "url": "https://tracker.example.internal/list/DEMO-407"
+      },
+      {
+        "project_id": "DEMO-411",
+        "name": "Expense report form update - Jordan Lee",
+        "url": "https://tracker.example.internal/list/DEMO-411"
+      },
+      {
+        "project_id": "DEMO-401",
+        "name": "Quarterly town hall program - Jordan Lee",
+        "url": "https://tracker.example.internal/list/DEMO-401"
+      }
+    ],
+    "completed": [
+      {
+        "project_id": "DEMO-412",
+        "name": "New-starter handbook update - Sam Okafor",
+        "url": "https://tracker.example.internal/list/DEMO-412"
+      }
+    ],
+    "not_started": [
+      {
+        "project_id": "DEMO-413",
+        "name": "Office relocation planning - Alex Rivera",
+        "url": "https://tracker.example.internal/list/DEMO-413"
+      }
+    ],
+    "held": [
+      {
+        "project_id": "DEMO-406",
+        "name": "Shared drive clean-up - Sam Okafor"
+      }
+    ],
+    "hold_pending": [],
+    "skipped_templates": [
+      "TEMPLATE - Project schedule"
+    ]
+  },
+  "splits": {
+    "currency": {
+      "current": 7,
+      "aging": 1,
+      "stale": 1,
+      "absent": 1
+    },
+    "newness": {
+      "new": 7,
+      "repeated": 1,
+      "placeholder": 1,
+      "not_applicable": 1
+    },
+    "color": {
+      "aligned": 5,
+      "misaligned": 2,
+      "not_assessable": 2,
+      "not_judged": 1
+    },
+    "records": {
+      "clean": 7,
+      "minor": 2,
+      "conflicting": 1
+    }
+  },
+  "projects": [
+    {
+      "project_id": "DEMO-409",
+      "name": "Intranet page refresh - Jane Doe",
+      "url": "https://tracker.example.internal/list/DEMO-409",
+      "lead": "Jane Doe",
+      "points": 2,
+      "grade": "F",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "absent",
+          "latest_entry_date": null,
+          "age_days": null,
+          "author": null,
+          "abandoned": true,
+          "resumed_on": null,
+          "result": "fail"
+        },
+        "newness": {
+          "band": "not_applicable",
+          "consecutive_same": 0,
+          "at_least": false,
+          "basis": "rule",
+          "result": null
+        },
+        "color": {
+          "reported": "green",
+          "source": "name",
+          "band": "not_assessable",
+          "quote": null,
+          "basis": "rule",
+          "result": null
+        },
+        "records": {
+          "band": "clean",
+          "items": [],
+          "result": "pass"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-403",
+      "name": "New hire welcome pack refresh - Priya Shah",
+      "url": "https://tracker.example.internal/list/DEMO-403",
+      "lead": "Priya Shah",
+      "points": 3,
+      "grade": "C",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "current",
+          "latest_entry_date": "2030-03-10",
+          "age_days": 2,
+          "author": "Priya Shah",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "pass"
+        },
+        "newness": {
+          "band": "new",
+          "consecutive_same": 1,
+          "at_least": false,
+          "basis": "rule",
+          "result": "pass"
+        },
+        "color": {
+          "reported": "green",
+          "source": "name",
+          "band": "misaligned",
+          "quote": "Blocked until the department lists arrive; no date yet.",
+          "basis": "judgment",
+          "result": "fail"
+        },
+        "records": {
+          "band": "minor",
+          "items": [
+            {
+              "kind": "status_field_stale",
+              "severity": "minor",
+              "detail": "The status field reads 'Kick-off scheduled' (describes kick-off; the project is past it).",
+              "owner": "Priya Shah",
+              "counted": true
+            }
+          ],
+          "result": "minor"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-408",
+      "name": "Payroll report refresh - Jane Doe",
+      "url": "https://tracker.example.internal/list/DEMO-408",
+      "lead": "Jane Doe",
+      "points": 3,
+      "grade": "C",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "current",
+          "latest_entry_date": "2030-03-09",
+          "age_days": 3,
+          "author": "Jane Doe",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "pass"
+        },
+        "newness": {
+          "band": "placeholder",
+          "consecutive_same": 1,
+          "at_least": false,
+          "basis": "rule",
+          "result": "fail"
+        },
+        "color": {
+          "reported": "green",
+          "source": "name",
+          "band": "not_assessable",
+          "quote": null,
+          "basis": "rule",
+          "result": null
+        },
+        "records": {
+          "band": "minor",
+          "items": [
+            {
+              "kind": "owner_mismatch",
+              "severity": "minor",
+              "detail": "The status task is assigned to Alex Rivera; the newest entry is by Jane Doe.",
+              "owner": "Jane Doe",
+              "counted": true
+            }
+          ],
+          "result": "minor"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-402",
+      "name": "Furniture inventory reconciliation - Alex Rivera",
+      "url": "https://tracker.example.internal/list/DEMO-402",
+      "lead": "Alex Rivera",
+      "points": 2,
+      "grade": "C",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "current",
+          "latest_entry_date": "2030-03-10",
+          "age_days": 2,
+          "author": "Alex Rivera",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "pass"
+        },
+        "newness": {
+          "band": "repeated",
+          "consecutive_same": 5,
+          "at_least": true,
+          "basis": "rule",
+          "result": "fail"
+        },
+        "color": {
+          "reported": "amber",
+          "source": "name",
+          "band": "aligned",
+          "quote": "Floor three count continues",
+          "basis": "judgment",
+          "result": "pass"
+        },
+        "records": {
+          "band": "clean",
+          "items": [],
+          "result": "pass"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-410",
+      "name": "Meeting room booking rollout - Alex Rivera",
+      "url": "https://tracker.example.internal/list/DEMO-410",
+      "lead": "Alex Rivera",
+      "points": 2,
+      "grade": "C",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "current",
+          "latest_entry_date": "2030-03-09",
+          "age_days": 3,
+          "author": "Alex Rivera",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "pass"
+        },
+        "newness": {
+          "band": "new",
+          "consecutive_same": 1,
+          "at_least": false,
+          "basis": "rule",
+          "result": "pass"
+        },
+        "color": {
+          "reported": "green",
+          "source": "name",
+          "band": "misaligned",
+          "quote": null,
+          "basis": "rule",
+          "result": "fail"
+        },
+        "records": {
+          "band": "clean",
+          "items": [],
+          "result": "pass"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-405",
+      "name": "Training library inventory - Jane Doe",
+      "url": "https://tracker.example.internal/list/DEMO-405",
+      "lead": "Jane Doe",
+      "points": 2,
+      "grade": "C",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "current",
+          "latest_entry_date": "2030-03-09",
+          "age_days": 3,
+          "author": "Jane Doe",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "pass"
+        },
+        "newness": {
+          "band": "new",
+          "consecutive_same": 1,
+          "at_least": false,
+          "basis": "rule",
+          "result": "pass"
+        },
+        "color": {
+          "reported": "amber",
+          "source": "name",
+          "band": "aligned",
+          "quote": "checking 120 course records against the shelf list",
+          "basis": "judgment",
+          "result": "pass"
+        },
+        "records": {
+          "band": "conflicting",
+          "items": [
+            {
+              "kind": "roadmap_status_conflict",
+              "severity": "conflict",
+              "detail": "The roadmap row 'Training library inventory' reads 'done' while the list sits in the active folder.",
+              "owner": "Priya Shah",
+              "counted": true
+            },
+            {
+              "kind": "owner_mismatch",
+              "severity": "minor",
+              "detail": "The status task has no owner; the newest entry is by Jane Doe.",
+              "owner": "Jane Doe",
+              "counted": true
+            }
+          ],
+          "result": "fail"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-404",
+      "name": "Visitor parking redesign - Sam Okafor",
+      "url": "https://tracker.example.internal/list/DEMO-404",
+      "lead": "Sam Okafor",
+      "points": 2,
+      "grade": "C",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "stale",
+          "latest_entry_date": "2030-02-12",
+          "age_days": 28,
+          "author": "Sam Okafor",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "fail"
+        },
+        "newness": {
+          "band": "new",
+          "consecutive_same": 1,
+          "at_least": false,
+          "basis": "rule",
+          "result": "pass"
+        },
+        "color": {
+          "reported": "amber",
+          "source": "name",
+          "band": "aligned",
+          "quote": "two layout options drafted for review",
+          "basis": "judgment",
+          "result": "pass"
+        },
+        "records": {
+          "band": "clean",
+          "items": [
+            {
+              "kind": "roadmap_status_conflict",
+              "severity": "conflict",
+              "detail": "Unconfirmed pair: The roadmap row 'Visitor parking redesign' reads 'on hold' while the project records no hold.",
+              "owner": "Sam Okafor",
+              "counted": false
+            }
+          ],
+          "result": "pass"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-407",
+      "name": "Annual handbook review - Priya Shah",
+      "url": "https://tracker.example.internal/list/DEMO-407",
+      "lead": "Priya Shah",
+      "points": 1,
+      "grade": "B",
+      "provisional": true,
+      "checks": {
+        "currency": {
+          "band": "aging",
+          "latest_entry_date": "2030-03-01",
+          "age_days": 11,
+          "author": "Priya Shah",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "minor"
+        },
+        "newness": {
+          "band": "new",
+          "consecutive_same": 1,
+          "at_least": false,
+          "basis": "rule",
+          "result": "pass"
+        },
+        "color": {
+          "reported": "amber",
+          "source": "name",
+          "band": "not_judged",
+          "quote": null,
+          "basis": "judgment",
+          "result": null
+        },
+        "records": {
+          "band": "clean",
+          "items": [],
+          "result": "pass"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-411",
+      "name": "Expense report form update - Jordan Lee",
+      "url": "https://tracker.example.internal/list/DEMO-411",
+      "lead": "Jordan Lee",
+      "points": 0,
+      "grade": "A",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "current",
+          "latest_entry_date": "2030-03-10",
+          "age_days": 2,
+          "author": "Jordan Lee",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "pass"
+        },
+        "newness": {
+          "band": "new",
+          "consecutive_same": 1,
+          "at_least": false,
+          "basis": "rule",
+          "result": "pass"
+        },
+        "color": {
+          "reported": "green",
+          "source": "name",
+          "band": "aligned",
+          "quote": "test version goes to 10 users on March 16",
+          "basis": "judgment",
+          "result": "pass"
+        },
+        "records": {
+          "band": "clean",
+          "items": [],
+          "result": "pass"
+        }
+      }
+    },
+    {
+      "project_id": "DEMO-401",
+      "name": "Quarterly town hall program - Jordan Lee",
+      "url": "https://tracker.example.internal/list/DEMO-401",
+      "lead": "Jordan Lee",
+      "points": 0,
+      "grade": "A",
+      "provisional": false,
+      "checks": {
+        "currency": {
+          "band": "current",
+          "latest_entry_date": "2030-03-11",
+          "age_days": 1,
+          "author": "Jordan Lee",
+          "abandoned": false,
+          "resumed_on": null,
+          "result": "pass"
+        },
+        "newness": {
+          "band": "new",
+          "consecutive_same": 1,
+          "at_least": false,
+          "basis": "rule",
+          "result": "pass"
+        },
+        "color": {
+          "reported": "green",
+          "source": "name",
+          "band": "aligned",
+          "quote": "Speaker list confirmed for the April session",
+          "basis": "judgment",
+          "result": "pass"
+        },
+        "records": {
+          "band": "clean",
+          "items": [],
+          "result": "pass"
+        }
+      }
+    }
+  ],
+  "outside_findings": [
+    {
+      "project_id": "DEMO-412",
+      "name": "New-starter handbook update - Sam Okafor",
+      "url": "https://tracker.example.internal/list/DEMO-412",
+      "folder": "completed",
+      "lead": "Sam Okafor",
+      "items": [
+        {
+          "kind": "placement_open_in_completed",
+          "severity": "conflict",
+          "detail": "2 tasks are open while the list sits in the completed folder.",
+          "owner": "Sam Okafor",
+          "counted": true
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-413",
+      "name": "Office relocation planning - Alex Rivera",
+      "url": "https://tracker.example.internal/list/DEMO-413",
+      "folder": "not_started",
+      "lead": "Alex Rivera",
+      "items": [
+        {
+          "kind": "placement_started_in_not_started",
+          "severity": "conflict",
+          "detail": "2 tasks are started while the list sits in the not-started folder.",
+          "owner": "Alex Rivera",
+          "counted": true
+        }
+      ]
+    }
+  ],
+  "leads": [
+    {
+      "name": "Jane Doe",
+      "grade": "D",
+      "provisional": false,
+      "project_ids": [
+        "DEMO-409",
+        "DEMO-408",
+        "DEMO-405"
+      ],
+      "fix_list": [
+        {
+          "owner": "Jane Doe",
+          "project_id": "DEMO-409",
+          "project_name": "Intranet page refresh - Jane Doe",
+          "url": "https://tracker.example.internal/list/DEMO-409",
+          "check": 1,
+          "kind": "abandoned",
+          "what": "Start using the list or record why it waits. No task has left the first status, the status task has not advanced and no task carries a date."
+        },
+        {
+          "owner": "Jane Doe",
+          "project_id": "DEMO-408",
+          "project_name": "Payroll report refresh - Jane Doe",
+          "url": "https://tracker.example.internal/list/DEMO-408",
+          "check": 2,
+          "kind": "placeholder",
+          "what": "Replace the placeholder with what happened. The newest entry reads: 'No update this week.'"
+        },
+        {
+          "owner": "Jane Doe",
+          "project_id": "DEMO-408",
+          "project_name": "Payroll report refresh - Jane Doe",
+          "url": "https://tracker.example.internal/list/DEMO-408",
+          "check": 4,
+          "kind": "owner_mismatch",
+          "what": "Make the status task owner and the entry author agree. The status task is assigned to Alex Rivera; the newest entry is by Jane Doe."
+        },
+        {
+          "owner": "Jane Doe",
+          "project_id": "DEMO-405",
+          "project_name": "Training library inventory - Jane Doe",
+          "url": "https://tracker.example.internal/list/DEMO-405",
+          "check": 4,
+          "kind": "owner_mismatch",
+          "what": "Make the status task owner and the entry author agree. The status task has no owner; the newest entry is by Jane Doe."
+        }
+      ],
+      "cleanup": {
+        "summary": [
+          {
+            "project_name": "Intranet page refresh - Jane Doe",
+            "url": "https://tracker.example.internal/list/DEMO-409",
+            "what": "Start using the list or record why it waits. No task has left the first status, the status task has not advanced and no task carries a date."
+          },
+          {
+            "project_name": "Payroll report refresh - Jane Doe",
+            "url": "https://tracker.example.internal/list/DEMO-408",
+            "what": "Replace the placeholder with what happened. The newest entry reads: 'No update this week.'"
+          },
+          {
+            "project_name": "Payroll report refresh - Jane Doe",
+            "url": "https://tracker.example.internal/list/DEMO-408",
+            "what": "Make the status task owner and the entry author agree. The status task is assigned to Alex Rivera; the newest entry is by Jane Doe."
+          },
+          {
+            "project_name": "Training library inventory - Jane Doe",
+            "url": "https://tracker.example.internal/list/DEMO-405",
+            "what": "Make the status task owner and the entry author agree. The status task has no owner; the newest entry is by Jane Doe."
+          },
+          {
+            "project_name": "Payroll report refresh - Jane Doe",
+            "url": "https://tracker.example.internal/list/DEMO-408",
+            "what": "Unused setup rows: 6 rows"
+          }
+        ],
+        "what_to_fix_count": 5,
+        "buckets": [
+          {
+            "key": "scaffold",
+            "label": "Unused setup rows",
+            "definition": "A block of not-started rows with no date and no owner.",
+            "remedy": "Remove the rows you will not use, or date and assign the ones you will.",
+            "lines": [
+              {
+                "task_id": null,
+                "task_name": "6 undated, unowned rows",
+                "project_name": "Payroll report refresh - Jane Doe",
+                "url": "https://tracker.example.internal/list/DEMO-408",
+                "detail": "Not started, with no due date and no owner"
+              }
+            ]
+          }
+        ],
+        "clean": false
+      }
+    },
+    {
+      "name": "Alex Rivera",
+      "grade": "C",
+      "provisional": false,
+      "project_ids": [
+        "DEMO-402",
+        "DEMO-410",
+        "DEMO-413"
+      ],
+      "fix_list": [
+        {
+          "owner": "Alex Rivera",
+          "project_id": "DEMO-402",
+          "project_name": "Furniture inventory reconciliation - Alex Rivera",
+          "url": "https://tracker.example.internal/list/DEMO-402",
+          "check": 2,
+          "kind": "repeated",
+          "what": "Write what changed since the previous entry. At least the last 5 entries match once dates are set aside."
+        },
+        {
+          "owner": "Alex Rivera",
+          "project_id": "DEMO-410",
+          "project_name": "Meeting room booking rollout - Alex Rivera",
+          "url": "https://tracker.example.internal/list/DEMO-410",
+          "check": 3,
+          "kind": "hold_color_conflict",
+          "what": "Make the color and the hold agree. The name records a hold and shows green."
+        },
+        {
+          "owner": "Alex Rivera",
+          "project_id": "DEMO-413",
+          "project_name": "Office relocation planning - Alex Rivera",
+          "url": "https://tracker.example.internal/list/DEMO-413",
+          "check": 4,
+          "kind": "placement_started_in_not_started",
+          "what": "Move the list or reset the tasks. 2 tasks are started while the list sits in the not-started folder."
+        }
+      ],
+      "cleanup": {
+        "summary": [
+          {
+            "project_name": "Furniture inventory reconciliation - Alex Rivera",
+            "url": "https://tracker.example.internal/list/DEMO-402",
+            "what": "Write what changed since the previous entry. At least the last 5 entries match once dates are set aside."
+          },
+          {
+            "project_name": "Meeting room booking rollout - Alex Rivera",
+            "url": "https://tracker.example.internal/list/DEMO-410",
+            "what": "Make the color and the hold agree. The name records a hold and shows green."
+          },
+          {
+            "project_name": "Office relocation planning - Alex Rivera",
+            "url": "https://tracker.example.internal/list/DEMO-413",
+            "what": "Move the list or reset the tasks. 2 tasks are started while the list sits in the not-started folder."
+          },
+          {
+            "project_name": "Furniture inventory reconciliation - Alex Rivera",
+            "url": "https://tracker.example.internal/list/DEMO-402",
+            "what": "Started, then idle: 4 tasks"
+          },
+          {
+            "project_name": "Furniture inventory reconciliation - Alex Rivera",
+            "url": "https://tracker.example.internal/list/DEMO-402",
+            "what": "Started with no date and no owner: 3 tasks"
+          },
+          {
+            "project_name": "Furniture inventory reconciliation - Alex Rivera",
+            "url": "https://tracker.example.internal/list/DEMO-402",
+            "what": "Past its due date: 4 tasks"
+          },
+          {
+            "project_name": "Furniture inventory reconciliation - Alex Rivera",
+            "url": "https://tracker.example.internal/list/DEMO-402",
+            "what": "Active with no owner: 3 tasks"
+          },
+          {
+            "project_name": "Furniture inventory reconciliation - Alex Rivera",
+            "url": "https://tracker.example.internal/list/DEMO-402",
+            "what": "Not started, past its date: 2 tasks"
+          }
+        ],
+        "what_to_fix_count": 8,
+        "buckets": [
+          {
+            "key": "parked",
+            "label": "Started, then idle",
+            "definition": "In progress for more than 60 days.",
+            "remedy": "Move it on, close it, or record why it waits.",
+            "lines": [
+              {
+                "task_id": "TKT-1012",
+                "task_name": "Count floor one storage room",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress since 2030-01-10 (61 days)"
+              },
+              {
+                "task_id": "TKT-1013",
+                "task_name": "Tag returned chairs",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress since 2030-01-08 (63 days)"
+              },
+              {
+                "task_id": "TKT-1014",
+                "task_name": "Reconcile desk serial numbers",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress since 2030-01-06 (65 days)"
+              },
+              {
+                "task_id": "TKT-1015",
+                "task_name": "Photograph damaged items",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress since 2030-01-08 (63 days)"
+              }
+            ]
+          },
+          {
+            "key": "no_date_no_owner",
+            "label": "Started with no date and no owner",
+            "definition": "In progress with neither a due date nor an assignee.",
+            "remedy": "Add an owner and a due date, or move it back to not started.",
+            "lines": [
+              {
+                "task_id": "TKT-1016",
+                "task_name": "Check loading dock cage",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress with no due date and no owner"
+              },
+              {
+                "task_id": "TKT-1017",
+                "task_name": "List spare monitor arms",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress with no due date and no owner"
+              },
+              {
+                "task_id": "TKT-1018",
+                "task_name": "Sort cable bins",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress with no due date and no owner"
+              }
+            ]
+          },
+          {
+            "key": "overdue",
+            "label": "Past its due date",
+            "definition": "In progress or queued, with a due date before this read.",
+            "remedy": "Finish it, close it, or set the date the team now expects.",
+            "lines": [
+              {
+                "task_id": "TKT-1019",
+                "task_name": "Upload floor two counts",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress, due 2030-03-01"
+              },
+              {
+                "task_id": "TKT-1020",
+                "task_name": "Send variance list to finance",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress, due 2030-03-06"
+              },
+              {
+                "task_id": "TKT-1021",
+                "task_name": "Label meeting room tables",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress, due 2030-03-09"
+              },
+              {
+                "task_id": "TKT-1022",
+                "task_name": "Book removal van",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "Ready to start, due 2030-03-08"
+              }
+            ]
+          },
+          {
+            "key": "no_owner",
+            "label": "Active with no owner",
+            "definition": "In progress or queued, with no assignee.",
+            "remedy": "Assign it to the person doing the work.",
+            "lines": [
+              {
+                "task_id": "TKT-1023",
+                "task_name": "Count floor four",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "In progress, due 2030-04-10"
+              },
+              {
+                "task_id": "TKT-1024",
+                "task_name": "Review lease inventory list",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "Ready to start, due 2030-04-15"
+              },
+              {
+                "task_id": "TKT-1025",
+                "task_name": "Order asset tags",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "Ready to start, due 2030-03-30"
+              }
+            ]
+          },
+          {
+            "key": "not_started_past_due",
+            "label": "Not started, past its date",
+            "definition": "Still in a not-started status with a due date before this read.",
+            "remedy": "Start it, re-date it, or close it.",
+            "lines": [
+              {
+                "task_id": "TKT-1026",
+                "task_name": "Plan floor five count",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "Not started, due 2030-03-05"
+              },
+              {
+                "task_id": "TKT-1027",
+                "task_name": "Draft disposal request",
+                "project_name": "Furniture inventory reconciliation - Alex Rivera",
+                "url": "https://tracker.example.internal/list/DEMO-402",
+                "detail": "Not started, due 2030-03-10"
+              }
+            ]
+          }
+        ],
+        "clean": false
+      }
+    },
+    {
+      "name": "Priya Shah",
+      "grade": "C",
+      "provisional": true,
+      "project_ids": [
+        "DEMO-403",
+        "DEMO-407"
+      ],
+      "fix_list": [
+        {
+          "owner": "Priya Shah",
+          "project_id": "DEMO-403",
+          "project_name": "New hire welcome pack refresh - Priya Shah",
+          "url": "https://tracker.example.internal/list/DEMO-403",
+          "check": 3,
+          "kind": "misaligned",
+          "what": "Make the color and the written status agree. The name shows green; the entry says: 'Blocked until the department lists arrive; no date yet.'"
+        },
+        {
+          "owner": "Priya Shah",
+          "project_id": "DEMO-403",
+          "project_name": "New hire welcome pack refresh - Priya Shah",
+          "url": "https://tracker.example.internal/list/DEMO-403",
+          "check": 4,
+          "kind": "status_field_stale",
+          "what": "Bring the status field up to date. The status field reads 'Kick-off scheduled' (describes kick-off; the project is past it)."
+        },
+        {
+          "owner": "Priya Shah",
+          "project_id": "DEMO-405",
+          "project_name": "Training library inventory - Jane Doe",
+          "url": "https://tracker.example.internal/list/DEMO-405",
+          "check": 4,
+          "kind": "roadmap_status_conflict",
+          "what": "Make the roadmap row and the project agree. The roadmap row 'Training library inventory' reads 'done' while the list sits in the active folder."
+        },
+        {
+          "owner": "Priya Shah",
+          "project_id": "DEMO-407",
+          "project_name": "Annual handbook review - Priya Shah",
+          "url": "https://tracker.example.internal/list/DEMO-407",
+          "check": 1,
+          "kind": "aging",
+          "what": "Add a status entry. The newest entry is dated 2030-03-01, 11 days before this read."
+        }
+      ],
+      "cleanup": {
+        "summary": [
+          {
+            "project_name": "New hire welcome pack refresh - Priya Shah",
+            "url": "https://tracker.example.internal/list/DEMO-403",
+            "what": "Make the color and the written status agree. The name shows green; the entry says: 'Blocked until the department lists arrive; no date yet.'"
+          },
+          {
+            "project_name": "New hire welcome pack refresh - Priya Shah",
+            "url": "https://tracker.example.internal/list/DEMO-403",
+            "what": "Bring the status field up to date. The status field reads 'Kick-off scheduled' (describes kick-off; the project is past it)."
+          },
+          {
+            "project_name": "Training library inventory - Jane Doe",
+            "url": "https://tracker.example.internal/list/DEMO-405",
+            "what": "Make the roadmap row and the project agree. The roadmap row 'Training library inventory' reads 'done' while the list sits in the active folder."
+          },
+          {
+            "project_name": "Annual handbook review - Priya Shah",
+            "url": "https://tracker.example.internal/list/DEMO-407",
+            "what": "Add a status entry. The newest entry is dated 2030-03-01, 11 days before this read."
+          },
+          {
+            "project_name": "New hire welcome pack refresh - Priya Shah",
+            "url": "https://tracker.example.internal/list/DEMO-403",
+            "what": "Started, then idle: 1 task"
+          }
+        ],
+        "what_to_fix_count": 5,
+        "buckets": [
+          {
+            "key": "parked",
+            "label": "Started, then idle",
+            "definition": "In progress for more than 60 days.",
+            "remedy": "Move it on, close it, or record why it waits.",
+            "lines": [
+              {
+                "task_id": "TKT-1042",
+                "task_name": "Collect department lists",
+                "project_name": "New hire welcome pack refresh - Priya Shah",
+                "url": "https://tracker.example.internal/list/DEMO-403",
+                "detail": "In progress since 2030-01-06 (65 days)"
+              }
+            ]
+          }
+        ],
+        "clean": false
+      }
+    },
+    {
+      "name": "Jordan Lee",
+      "grade": "A",
+      "provisional": false,
+      "project_ids": [
+        "DEMO-411",
+        "DEMO-401"
+      ],
+      "fix_list": [],
+      "cleanup": {
+        "summary": [],
+        "what_to_fix_count": 0,
+        "buckets": [],
+        "clean": true
+      }
+    },
+    {
+      "name": "Sam Okafor",
+      "grade": "F",
+      "provisional": false,
+      "project_ids": [
+        "DEMO-404",
+        "DEMO-412"
+      ],
+      "fix_list": [
+        {
+          "owner": "Sam Okafor",
+          "project_id": "DEMO-404",
+          "project_name": "Visitor parking redesign - Sam Okafor",
+          "url": "https://tracker.example.internal/list/DEMO-404",
+          "check": 1,
+          "kind": "stale",
+          "what": "Add a status entry. The newest entry is dated 2030-02-12, 28 days before this read."
+        },
+        {
+          "owner": "Sam Okafor",
+          "project_id": "DEMO-412",
+          "project_name": "New-starter handbook update - Sam Okafor",
+          "url": "https://tracker.example.internal/list/DEMO-412",
+          "check": 4,
+          "kind": "placement_open_in_completed",
+          "what": "Close or move the open work. 2 tasks are open while the list sits in the completed folder."
+        }
+      ],
+      "cleanup": {
+        "summary": [
+          {
+            "project_name": "Visitor parking redesign - Sam Okafor",
+            "url": "https://tracker.example.internal/list/DEMO-404",
+            "what": "Add a status entry. The newest entry is dated 2030-02-12, 28 days before this read."
+          },
+          {
+            "project_name": "New-starter handbook update - Sam Okafor",
+            "url": "https://tracker.example.internal/list/DEMO-412",
+            "what": "Close or move the open work. 2 tasks are open while the list sits in the completed folder."
+          },
+          {
+            "project_name": "Payroll report refresh - Jane Doe",
+            "url": "https://tracker.example.internal/list/DEMO-408",
+            "what": "Past its due date: 1 task"
+          }
+        ],
+        "what_to_fix_count": 3,
+        "buckets": [
+          {
+            "key": "overdue",
+            "label": "Past its due date",
+            "definition": "In progress or queued, with a due date before this read.",
+            "remedy": "Finish it, close it, or set the date the team now expects.",
+            "lines": [
+              {
+                "task_id": "TKT-1098",
+                "task_name": "Confirm data feed times",
+                "project_name": "Payroll report refresh - Jane Doe",
+                "url": "https://tracker.example.internal/list/DEMO-408",
+                "detail": "In progress, due 2030-03-06"
+              }
+            ]
+          },
+          {
+            "key": "open_raid",
+            "label": "RAID log still open",
+            "definition": "A RAID log task left open in a finished project.",
+            "remedy": "Close the log, or move any live item to the project that owns it now.",
+            "lines": [
+              {
+                "task_id": "TKT-1142",
+                "task_name": "RAID log",
+                "project_name": "New-starter handbook update - Sam Okafor",
+                "url": "https://tracker.example.internal/list/DEMO-412",
+                "detail": "Open (in progress)"
+              }
+            ]
+          },
+          {
+            "key": "past_due_open",
+            "label": "Open and past due in a finished project",
+            "definition": "An open task with a due date before this read, in a finished project.",
+            "remedy": "Close it, or move it to the project that owns the work now.",
+            "lines": [
+              {
+                "task_id": "TKT-1143",
+                "task_name": "Print handbook copies",
+                "project_name": "New-starter handbook update - Sam Okafor",
+                "url": "https://tracker.example.internal/list/DEMO-412",
+                "detail": "Open, due 2030-02-20"
+              }
+            ]
+          }
+        ],
+        "clean": false
+      }
+    }
+  ],
+  "unattributed": [],
+  "corrections_by_project": [
+    {
+      "project_id": "DEMO-409",
+      "name": "Intranet page refresh - Jane Doe",
+      "url": "https://tracker.example.internal/list/DEMO-409",
+      "owners": [
+        "Jane Doe"
+      ],
+      "corrections": [
+        {
+          "owner": "Jane Doe",
+          "what": "Start using the list or record why it waits. No task has left the first status, the status task has not advanced and no task carries a date."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-403",
+      "name": "New hire welcome pack refresh - Priya Shah",
+      "url": "https://tracker.example.internal/list/DEMO-403",
+      "owners": [
+        "Priya Shah"
+      ],
+      "corrections": [
+        {
+          "owner": "Priya Shah",
+          "what": "Make the color and the written status agree. The name shows green; the entry says: 'Blocked until the department lists arrive; no date yet.'"
+        },
+        {
+          "owner": "Priya Shah",
+          "what": "Bring the status field up to date. The status field reads 'Kick-off scheduled' (describes kick-off; the project is past it)."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-408",
+      "name": "Payroll report refresh - Jane Doe",
+      "url": "https://tracker.example.internal/list/DEMO-408",
+      "owners": [
+        "Jane Doe"
+      ],
+      "corrections": [
+        {
+          "owner": "Jane Doe",
+          "what": "Replace the placeholder with what happened. The newest entry reads: 'No update this week.'"
+        },
+        {
+          "owner": "Jane Doe",
+          "what": "Make the status task owner and the entry author agree. The status task is assigned to Alex Rivera; the newest entry is by Jane Doe."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-402",
+      "name": "Furniture inventory reconciliation - Alex Rivera",
+      "url": "https://tracker.example.internal/list/DEMO-402",
+      "owners": [
+        "Alex Rivera"
+      ],
+      "corrections": [
+        {
+          "owner": "Alex Rivera",
+          "what": "Write what changed since the previous entry. At least the last 5 entries match once dates are set aside."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-410",
+      "name": "Meeting room booking rollout - Alex Rivera",
+      "url": "https://tracker.example.internal/list/DEMO-410",
+      "owners": [
+        "Alex Rivera"
+      ],
+      "corrections": [
+        {
+          "owner": "Alex Rivera",
+          "what": "Make the color and the hold agree. The name records a hold and shows green."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-405",
+      "name": "Training library inventory - Jane Doe",
+      "url": "https://tracker.example.internal/list/DEMO-405",
+      "owners": [
+        "Jane Doe",
+        "Priya Shah"
+      ],
+      "corrections": [
+        {
+          "owner": "Jane Doe",
+          "what": "Make the status task owner and the entry author agree. The status task has no owner; the newest entry is by Jane Doe."
+        },
+        {
+          "owner": "Priya Shah",
+          "what": "Make the roadmap row and the project agree. The roadmap row 'Training library inventory' reads 'done' while the list sits in the active folder."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-404",
+      "name": "Visitor parking redesign - Sam Okafor",
+      "url": "https://tracker.example.internal/list/DEMO-404",
+      "owners": [
+        "Sam Okafor"
+      ],
+      "corrections": [
+        {
+          "owner": "Sam Okafor",
+          "what": "Add a status entry. The newest entry is dated 2030-02-12, 28 days before this read."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-407",
+      "name": "Annual handbook review - Priya Shah",
+      "url": "https://tracker.example.internal/list/DEMO-407",
+      "owners": [
+        "Priya Shah"
+      ],
+      "corrections": [
+        {
+          "owner": "Priya Shah",
+          "what": "Add a status entry. The newest entry is dated 2030-03-01, 11 days before this read."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-412",
+      "name": "New-starter handbook update - Sam Okafor",
+      "url": "https://tracker.example.internal/list/DEMO-412",
+      "owners": [
+        "Sam Okafor"
+      ],
+      "corrections": [
+        {
+          "owner": "Sam Okafor",
+          "what": "Close or move the open work. 2 tasks are open while the list sits in the completed folder."
+        }
+      ]
+    },
+    {
+      "project_id": "DEMO-413",
+      "name": "Office relocation planning - Alex Rivera",
+      "url": "https://tracker.example.internal/list/DEMO-413",
+      "owners": [
+        "Alex Rivera"
+      ],
+      "corrections": [
+        {
+          "owner": "Alex Rivera",
+          "what": "Move the list or reset the tasks. 2 tasks are started while the list sits in the not-started folder."
+        }
+      ]
+    }
+  ],
+  "projects_needing_nothing": [
+    "Expense report form update - Jordan Lee",
+    "Quarterly town hall program - Jordan Lee"
+  ],
+  "reporting_well": [
+    "Expense report form update - Jordan Lee",
+    "Quarterly town hall program - Jordan Lee"
+  ],
+  "closed_since_prior": [],
+  "judgment_requests": [
+    {
+      "project_id": "DEMO-401",
+      "project_name": "Quarterly town hall program - Jordan Lee",
+      "check": "color",
+      "entry_date": "2030-03-11",
+      "entry_text": "Speaker list confirmed for the April session; venue walk-through booked for March 20.",
+      "reported_color": "green",
+      "field_value": null,
+      "answered": true
+    },
+    {
+      "project_id": "DEMO-402",
+      "project_name": "Furniture inventory reconciliation - Alex Rivera",
+      "check": "color",
+      "entry_date": "2030-03-10",
+      "entry_text": "Floor three count continues; next check-in March 17.",
+      "reported_color": "amber",
+      "field_value": null,
+      "answered": true
+    },
+    {
+      "project_id": "DEMO-402",
+      "project_name": "Furniture inventory reconciliation - Alex Rivera",
+      "check": "status_field",
+      "entry_date": "2030-03-10",
+      "entry_text": "Floor three count continues; next check-in March 17.",
+      "reported_color": "amber",
+      "field_value": "Counting floor three",
+      "answered": true
+    },
+    {
+      "project_id": "DEMO-403",
+      "project_name": "New hire welcome pack refresh - Priya Shah",
+      "check": "color",
+      "entry_date": "2030-03-10",
+      "entry_text": "Blocked until the department lists arrive; no date yet.",
+      "reported_color": "green",
+      "field_value": null,
+      "answered": true
+    },
+    {
+      "project_id": "DEMO-403",
+      "project_name": "New hire welcome pack refresh - Priya Shah",
+      "check": "status_field",
+      "entry_date": "2030-03-10",
+      "entry_text": "Blocked until the department lists arrive; no date yet.",
+      "reported_color": "green",
+      "field_value": "Kick-off scheduled",
+      "answered": true
+    },
+    {
+      "project_id": "DEMO-404",
+      "project_name": "Visitor parking redesign - Sam Okafor",
+      "check": "color",
+      "entry_date": "2030-02-12",
+      "entry_text": "Survey results in; two layout options drafted for review.",
+      "reported_color": "amber",
+      "field_value": null,
+      "answered": true
+    },
+    {
+      "project_id": "DEMO-405",
+      "project_name": "Training library inventory - Jane Doe",
+      "check": "color",
+      "entry_date": "2030-03-09",
+      "entry_text": "Catalog export received; checking 120 course records against the shelf list.",
+      "reported_color": "amber",
+      "field_value": null,
+      "answered": true
+    },
+    {
+      "project_id": "DEMO-407",
+      "project_name": "Annual handbook review - Priya Shah",
+      "check": "color",
+      "entry_date": "2030-03-01",
+      "entry_text": "Legal comments received on chapters one to four; chapter five in drafting.",
+      "reported_color": "amber",
+      "field_value": null,
+      "answered": false
+    },
+    {
+      "project_id": "DEMO-411",
+      "project_name": "Expense report form update - Jordan Lee",
+      "check": "color",
+      "entry_date": "2030-03-10",
+      "entry_text": "Form fields agreed with finance; test version goes to 10 users on March 16.",
+      "reported_color": "green",
+      "field_value": null,
+      "answered": true
+    }
+  ],
+  "method": {
+    "pulled_at": "2030-03-12T08:30",
+    "includes_subtasks": false,
+    "sources": [
+      "export: portfolio-export.json (pulled 2030-03-12T08:30, clickup)",
+      "config: demo-config.json (version 2030.1)",
+      "pair file: roadmap-pairs.md",
+      "judgments: judgments.json (by Priya Shah)"
+    ],
+    "folder_counts": {
+      "active": {
+        "lists": 12,
+        "tasks": 62
+      },
+      "completed": {
+        "lists": 1,
+        "tasks": 4
+      },
+      "not_started": {
+        "lists": 1,
+        "tasks": 3
+      }
+    },
+    "filters": {
+      "parked_raw": 14,
+      "parked_counted": 5,
+      "status_tasks_excluded": 11,
+      "finished_tasks_excluded": 12
+    },
+    "unpaired_active_lists": [
+      "Payroll report refresh - Jane Doe"
+    ],
+    "unconfirmed_pairs": [
+      "Visitor parking redesign - Sam Okafor"
+    ],
+    "missing_roadmap_rows": [],
+    "completed_pair_conflicts": [
+      "New-starter handbook update - Sam Okafor: the roadmap row 'New-starter handbook update' reads 'in progress' although the list is in the completed folder"
+    ],
+    "not_judged": [
+      "DEMO-407 Annual handbook review - Priya Shah: color judgment missing"
+    ],
+    "discarded_judgments": [
+      "DEMO-410 color: a recorded hold with a green marker sets this check by rule"
+    ],
+    "count_checks": [],
+    "measurement_changes": [],
+    "notes": [
+      "No prior read supplied; week-over-week lines are empty"
+    ]
+  },
+  "context": {
+    "overdue_tasks_total": 8
+  }
+}

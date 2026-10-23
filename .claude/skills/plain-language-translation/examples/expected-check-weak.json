@@ -1,0 +1,44 @@
+{
+  "file": "draft-weak.md",
+  "words": 80,
+  "sentences": 6,
+  "syllables": 138,
+  "avg_sentence_words": 13.3,
+  "fk_grade": 10.0,
+  "target_grade": 8.0,
+  "grade_ok": false,
+  "avg_sentence_ok": true,
+  "long_paragraphs": [
+    {
+      "paragraph": 2,
+      "sentences": 5
+    }
+  ],
+  "unexpanded_acronyms": [
+    "ERP",
+    "OCR"
+  ],
+  "vague_time": [
+    {
+      "phrase": "in the coming (days/weeks/months)",
+      "count": 1
+    },
+    {
+      "phrase": "shortly",
+      "count": 1
+    }
+  ],
+  "banned_words": "checked",
+  "banned_hits": [
+    {
+      "word": "empower",
+      "count": 1
+    },
+    {
+      "word": "seamless",
+      "count": 1
+    }
+  ],
+  "em_dashes": 0,
+  "status": "fail"
+}

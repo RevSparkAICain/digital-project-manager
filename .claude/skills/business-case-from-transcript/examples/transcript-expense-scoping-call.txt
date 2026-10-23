@@ -1,0 +1,37 @@
+Expense system replacement: scoping call
+Tuesday, March 5, 2030
+Attendees: Alex Rivera (Finance Director, sponsor), Jane Doe (project lead), Priya Shah (IT manager), Sam Okafor (legal and policy lead)
+
+[00:00:12] Jane Doe: Thanks for making time. The goal today is to scope the expense system replacement and agree what goes into the business case. I will write it up and send a draft by next Tuesday, March 12.
+
+[00:00:41] Alex Rivera: The current tool is the problem. Expense reports are entered twice, once in the tool and once in the ledger, and the finance team spends about two days at every month end fixing the mismatches. Staff wait three weeks to be repaid, and people file late because the tool is slow.
+
+[00:01:35] Priya Shah: The tool also runs on a server that is past its support date. We pay $9,000 a year to keep that server supported. If the tool goes away, that support cost goes away with it from the year after go-live.
+
+[00:02:10] Jane Doe: So we have three options. First, keep the current tool. Second, move to a hosted expense service. Third, build a tool in house.
+
+[00:02:48] Priya Shah: Keeping the current tool means the double entry stays and the server support stays. It costs nothing new, but it fixes nothing. Building in house is possible, but we do not have the people free this year, and we would own every fix afterward. I would not recommend it.
+
+[00:03:40] Alex Rivera: Then the hosted service is my pick. It posts straight to the ledger, which ends the double entry.
+
+[00:04:05] Priya Shah: The numbers I have from the vendor quote are these. Implementation is $36,000, one time. The subscription is $24,000 a year.
+
+[00:04:30] Jane Doe: So the first year costs $60,000, the implementation plus one year of subscription. That is also the budget figure I will carry into the charter.
+
+[00:04:52] Alex Rivera: And the $9,000 server saving starts the year after go-live. Good. What does the quote say about the subscription after year three?
+
+[00:05:10] Priya Shah: It does not say. The vendor only priced the first three years. I will ask for the later price.
+
+[00:05:25] Jane Doe: Then I will mark that as open in the case until we hear back.
+
+[00:05:48] Sam Okafor: One risk from my side. We keep receipts for seven years. I have not confirmed that the retention setting on the hosted service can be set to seven years. If it cannot, we would have to export receipts to our own storage. I will confirm it with the vendor before we sign anything. I would rate the likelihood a 3 and the impact a 4.
+
+[00:06:30] Jane Doe: Noted: owner Sam Okafor, likelihood 3, impact 4. Now the dates. If the business case is approved on April 2, the charter can be approved on April 16.
+
+[00:07:02] Alex Rivera: Then a pilot with the finance team on June 4, so the people who feel the pain test it first.
+
+[00:07:30] Jane Doe: Go-live on September 3, hypercare through September 17, and close-out on October 1.
+
+[00:08:05] Alex Rivera: Agreed. Send me the draft and I will take it to the sponsor review.
+
+[00:08:20] Jane Doe: Will do. Thanks, everyone.

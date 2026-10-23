@@ -1,0 +1,116 @@
+# Audience segments and vocabulary for the comms pod.
+#
+# Copy this file to audiences.yaml in the same folder and replace the values with your
+# own departments, their real working vocabulary, and the reader you write for.
+# Every comms agent and skill that tailors copy reads audiences.yaml first and falls back to
+# this example. Every value below is for the fictional ACME Co.
+#
+# Fields per segment:
+#   name           how the segment is referred to in plans and framing tables
+#   reading_grade  target grade for pieces written to this segment (8 for all staff,
+#                  10 for IT and leader pieces)
+#   lead_with      what the piece opens on
+#   length         target length
+#   example        the kind of example that lands with this group
+#   vocabulary     the group's own nouns, and the project terms they replace
+#   verbs          the verbs this group uses for the work a change usually touches
+
+# The benchmark reader is set once, as `example_persona` in comms-config.yaml (or
+# comms-config.example.yaml until a team writes its own). This file does not repeat it.
+
+segments:
+  - id: general-staff
+    name: General staff
+    reading_grade: 8
+    lead_with: What you do differently, and when
+    length: 150 to 250 words
+    example: Their own daily task
+    vocabulary:
+      - their_term: your computer
+        project_term: endpoint
+      - their_term: signing in
+        project_term: authentication
+    verbs: [sign in, open a file, join a meeting]
+
+  - id: customer-sales
+    name: Customer-facing and sales staff
+    reading_grade: 8
+    lead_with: Customer impact and time cost
+    length: Under 150 words, scannable, mobile-first
+    example: What to say to a customer who asks
+    vocabulary:
+      - their_term: account
+        project_term: customer record
+      - their_term: the quote
+        project_term: pricing document
+    verbs: [log a call, send a quote, update the account]
+
+  - id: support
+    name: Customer Support
+    reading_grade: 8
+    lead_with: What the customer on the line sees
+    length: Under 150 words
+    example: A live support call
+    vocabulary:
+      - their_term: case
+        project_term: ticket
+      - their_term: the queue
+        project_term: work intake
+    verbs: [pick up a case, escalate a case, close a case]
+
+  - id: operations
+    name: Operations
+    reading_grade: 8
+    lead_with: Process step changes and cutover timing
+    length: 200 to 300 words
+    example: The step in their queue that changes
+    vocabulary:
+      - their_term: work order
+        project_term: job record
+      - their_term: shift handoff
+        project_term: status transfer
+    verbs: [open a work order, hand off a shift, clear an exception]
+
+  - id: finance
+    name: Finance
+    reading_grade: 8
+    lead_with: Effect on month-end close and approvals
+    length: 200 to 300 words
+    example: A step in the month-end close
+    vocabulary:
+      - their_term: entry
+        project_term: transaction record
+      - their_term: the close
+        project_term: period-end processing
+    verbs: [post an entry, approve an invoice, close the books]
+
+  - id: leaders
+    name: Business leaders
+    reading_grade: 10
+    lead_with: What changes for the business, what could go wrong, and what we need from them
+    length: 250 words plus talking points
+    example: Their team's readiness
+    vocabulary: []
+    verbs: [brief the team, confirm readiness]
+
+  - id: it-engineering
+    name: IT and Engineering
+    reading_grade: 10
+    lead_with: Technical detail, dependencies, support load
+    length: Full detail
+    example: Configuration and known issues
+    vocabulary: []
+    verbs: [deploy, roll back, raise a change]
+
+  - id: legal-policy
+    name: Legal and Policy
+    reading_grade: 10
+    lead_with: What the change means for a policy or contract
+    length: 200 to 300 words
+    example: The policy or contract clause the change touches
+    vocabulary:
+      - their_term: the policy
+        project_term: configuration standard
+      - their_term: the record
+        project_term: logs and reports
+    verbs: [review a contract, update a policy, keep a record]

@@ -1,0 +1,8 @@
+4/10 - Held pilot readiness check; pilot start holds at 4/22, to be revisited on 4/17 against the offline sync fix. Notes from this discussion: <notes link>.
+
+Accomplishments:
+4/9 - Trained 18 of 20 pilot technicians; the remaining 2 are booked for 4/15.
+4/8 - Enrolled all 40 pilot devices (DEMO-128).
+
+RISKS - Offline sync defect (DEMO-131) fix due 4/17; a slip past 4/19 moves the 4/22 pilot start.
+ISSUES - None.

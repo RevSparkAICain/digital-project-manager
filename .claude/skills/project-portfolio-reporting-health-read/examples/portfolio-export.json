@@ -1,0 +1,305 @@
+{
+  "export_version": 1,
+  "tracker_kind": "clickup",
+  "pulled_at": "2030-03-12T08:30",
+  "includes_subtasks": false,
+  "folders": {
+    "active": {
+      "reported_task_total": 62,
+      "lists": [
+        {
+          "list_id": "DEMO-401",
+          "name": "Quarterly town hall program - Jordan Lee",
+          "task_total": 4,
+          "status_task": {
+            "task_id": "TKT-1001", "name": "[G] Weekly note", "status": "in progress",
+            "assignee": "Jordan Lee", "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Jordan Lee", "date": "2030-03-11", "text": "Speaker list confirmed for the April session; venue walk-through booked for March 20."},
+              {"author": "Jordan Lee", "date": "2030-03-04", "text": "Agenda draft shared with the department heads; two speaker slots still open."},
+              {"author": "Jordan Lee", "date": "2030-02-25", "text": "Venue options narrowed to two; budget approved."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1001", "name": "[G] Weekly note", "status": "in progress", "assignees": ["Jordan Lee"], "due": null, "start": null, "status_since": "2030-01-06"},
+            {"task_id": "TKT-1002", "name": "Confirm venue", "status": "complete", "assignees": ["Jordan Lee"], "due": "2030-02-20", "start": "2030-02-01", "status_since": "2030-02-19"},
+            {"task_id": "TKT-1003", "name": "Draft agenda", "status": "in progress", "assignees": ["Jordan Lee"], "due": "2030-03-25", "start": "2030-03-01", "status_since": "2030-03-01"},
+            {"task_id": "TKT-1004", "name": "Book speakers", "status": "to do", "assignees": ["Jordan Lee"], "due": "2030-04-01", "start": null, "status_since": "2030-02-15"}
+          ]
+        },
+        {
+          "list_id": "DEMO-402",
+          "name": "Furniture inventory reconciliation - Alex Rivera",
+          "task_total": 20,
+          "status_task": {
+            "task_id": "TKT-1011", "name": "[A] Weekly note", "status": "in progress",
+            "assignee": "Alex Rivera", "status_field": "Counting floor three", "color_field": null,
+            "entries": [
+              {"author": "Alex Rivera", "date": "2030-03-10", "text": "Floor three count continues; next check-in March 17."},
+              {"author": "Alex Rivera", "date": "2030-03-03", "text": "Floor three count continues; next check-in March 10."},
+              {"author": "Alex Rivera", "date": "2030-02-24", "text": "Floor three count continues; next check-in March 3."},
+              {"author": "Alex Rivera", "date": "2030-02-17", "text": "Floor three count continues; next check-in February 24."},
+              {"author": "Alex Rivera", "date": "2030-02-10", "text": "Floor three count continues; next check-in February 17."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1011", "name": "[A] Weekly note", "status": "in progress", "assignees": ["Alex Rivera"], "due": null, "start": null, "status_since": "2029-02-05"},
+            {"task_id": "TKT-1012", "name": "Count floor one storage room", "status": "in progress", "assignees": ["Alex Rivera"], "due": "2030-04-30", "start": "2030-01-05", "status_since": "2030-01-10"},
+            {"task_id": "TKT-1013", "name": "Tag returned chairs", "status": "in progress", "assignees": ["Alex Rivera"], "due": null, "start": "2030-01-08", "status_since": "2030-01-08"},
+            {"task_id": "TKT-1014", "name": "Reconcile desk serial numbers", "status": "in progress", "assignees": [], "due": null, "start": null, "status_since": "2030-01-06"},
+            {"task_id": "TKT-1015", "name": "Photograph damaged items", "status": "in progress", "assignees": ["Alex Rivera"], "due": "2030-02-28", "start": null, "status_since": "2030-01-08"},
+            {"task_id": "TKT-1016", "name": "Check loading dock cage", "status": "in progress", "assignees": [], "due": null, "start": null, "status_since": "2030-03-02"},
+            {"task_id": "TKT-1017", "name": "List spare monitor arms", "status": "in progress", "assignees": [], "due": null, "start": null, "status_since": "2030-03-05"},
+            {"task_id": "TKT-1018", "name": "Sort cable bins", "status": "in progress", "assignees": [], "due": null, "start": null, "status_since": "2030-02-20"},
+            {"task_id": "TKT-1019", "name": "Upload floor two counts", "status": "in progress", "assignees": ["Alex Rivera"], "due": "2030-03-01", "start": null, "status_since": "2030-02-10"},
+            {"task_id": "TKT-1020", "name": "Send variance list to finance", "status": "in progress", "assignees": ["Alex Rivera"], "due": "2030-03-06", "start": null, "status_since": "2030-02-25"},
+            {"task_id": "TKT-1021", "name": "Label meeting room tables", "status": "in progress", "assignees": ["Alex Rivera"], "due": "2030-03-09", "start": null, "status_since": "2030-03-01"},
+            {"task_id": "TKT-1022", "name": "Book removal van", "status": "ready", "assignees": ["Alex Rivera"], "due": "2030-03-08", "start": null, "status_since": "2030-02-28"},
+            {"task_id": "TKT-1023", "name": "Count floor four", "status": "in progress", "assignees": [], "due": "2030-04-10", "start": null, "status_since": "2030-03-03"},
+            {"task_id": "TKT-1024", "name": "Review lease inventory list", "status": "ready", "assignees": [], "due": "2030-04-15", "start": null, "status_since": "2030-03-01"},
+            {"task_id": "TKT-1025", "name": "Order asset tags", "status": "ready", "assignees": [], "due": "2030-03-30", "start": null, "status_since": "2030-03-05"},
+            {"task_id": "TKT-1026", "name": "Plan floor five count", "status": "to do", "assignees": ["Alex Rivera"], "due": "2030-03-05", "start": null, "status_since": "2030-02-01"},
+            {"task_id": "TKT-1027", "name": "Draft disposal request", "status": "to do", "assignees": ["Alex Rivera"], "due": "2030-03-10", "start": null, "status_since": "2030-02-15"},
+            {"task_id": "TKT-1028", "name": "Collect floor plans", "status": "complete", "assignees": [], "due": null, "start": null, "status_since": "2030-01-20"},
+            {"task_id": "TKT-1029", "name": "Agree count method", "status": "complete", "assignees": [], "due": null, "start": null, "status_since": "2030-01-25"},
+            {"task_id": "TKT-1030", "name": "Set up count sheet", "status": "closed", "assignees": [], "due": null, "start": null, "status_since": "2030-01-28"}
+          ]
+        },
+        {
+          "list_id": "DEMO-403",
+          "name": "New hire welcome pack refresh - Priya Shah",
+          "task_total": 4,
+          "status_task": {
+            "task_id": "TKT-1041", "name": "[G] Weekly note", "status": "in progress",
+            "assignee": "Priya Shah", "status_field": "Kick-off scheduled", "color_field": null,
+            "entries": [
+              {"author": "Priya Shah", "date": "2030-03-10", "text": "Blocked until the department lists arrive; no date yet."},
+              {"author": "Priya Shah", "date": "2030-03-03", "text": "Content outline approved; waiting on department lists to start the welcome letters."},
+              {"author": "Priya Shah", "date": "2030-02-24", "text": "Kick-off held with the people team; outline due next week."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1041", "name": "[G] Weekly note", "status": "in progress", "assignees": ["Priya Shah"], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1042", "name": "Collect department lists", "status": "in progress", "assignees": ["Priya Shah"], "due": "2030-03-20", "start": "2030-01-06", "status_since": "2030-01-06"},
+            {"task_id": "TKT-1043", "name": "Write welcome letter", "status": "to do", "assignees": ["Priya Shah"], "due": "2030-04-05", "start": null, "status_since": "2030-02-20"},
+            {"task_id": "TKT-1044", "name": "Approve outline", "status": "complete", "assignees": ["Priya Shah"], "due": "2030-03-03", "start": null, "status_since": "2030-03-02"}
+          ]
+        },
+        {
+          "list_id": "DEMO-404",
+          "name": "Visitor parking redesign - Sam Okafor",
+          "task_total": 3,
+          "status_task": {
+            "task_id": "TKT-1051", "name": "[A] Weekly note", "status": "in progress",
+            "assignee": "Sam Okafor", "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Tracker Automation", "date": "2030-03-11", "text": "[auto] Reminder: this weekly note is due.", "is_bot": true},
+              {"author": "Sam Okafor", "date": "2030-02-12", "text": "Survey results in; two layout options drafted for review."},
+              {"author": "Sam Okafor", "date": "2030-02-01", "text": "Parking survey sent to all staff; closes February 10."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1051", "name": "[A] Weekly note", "status": "in progress", "assignees": ["Sam Okafor"], "due": null, "start": null, "status_since": "2030-01-06"},
+            {"task_id": "TKT-1052", "name": "Draft layout options", "status": "in progress", "assignees": ["Sam Okafor"], "due": "2030-03-30", "start": null, "status_since": "2030-02-05"},
+            {"task_id": "TKT-1053", "name": "Run staff survey", "status": "complete", "assignees": ["Sam Okafor"], "due": "2030-02-10", "start": null, "status_since": "2030-02-10"}
+          ]
+        },
+        {
+          "list_id": "DEMO-405",
+          "name": "Training library inventory - Jane Doe",
+          "task_total": 3,
+          "status_task": {
+            "task_id": "TKT-1061", "name": "[A] Weekly note", "status": "in progress",
+            "assignee": null, "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Jane Doe", "date": "2030-03-09", "text": "Catalog export received; checking 120 course records against the shelf list."},
+              {"author": "Jane Doe", "date": "2030-03-02", "text": "Shelf list complete for rooms one and two."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1061", "name": "[A] Weekly note", "status": "in progress", "assignees": [], "due": null, "start": null, "status_since": "2030-01-20"},
+            {"task_id": "TKT-1062", "name": "Check course records", "status": "in progress", "assignees": ["Jane Doe"], "due": "2030-03-27", "start": null, "status_since": "2030-03-05"},
+            {"task_id": "TKT-1063", "name": "Finish shelf list", "status": "complete", "assignees": ["Jane Doe"], "due": "2030-03-02", "start": null, "status_since": "2030-03-01"}
+          ]
+        },
+        {
+          "list_id": "DEMO-406",
+          "name": "Shared drive clean-up - Sam Okafor",
+          "task_total": 3,
+          "status_task": {
+            "task_id": "TKT-1071", "name": "[A] PAUSED: Weekly note", "status": "on hold",
+            "assignee": "Sam Okafor", "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Sam Okafor", "date": "2030-01-20", "text": "On hold until the facilities team publishes the new floor plan; the facilities lead owns that."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1071", "name": "[A] PAUSED: Weekly note", "status": "on hold", "assignees": ["Sam Okafor"], "due": null, "start": null, "status_since": "2030-01-20"},
+            {"task_id": "TKT-1072", "name": "Archive old project folders", "status": "in progress", "assignees": ["Sam Okafor"], "due": "2030-02-15", "start": null, "status_since": "2029-12-10"},
+            {"task_id": "TKT-1073", "name": "Remove duplicate drives", "status": "to do", "assignees": ["Sam Okafor"], "due": "2030-02-01", "start": null, "status_since": "2029-12-01"}
+          ]
+        },
+        {
+          "list_id": "DEMO-407",
+          "name": "Annual handbook review - Priya Shah",
+          "task_total": 3,
+          "status_task": {
+            "task_id": "TKT-1081", "name": "[A] Weekly note", "status": "in progress",
+            "assignee": "Priya Shah", "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Priya Shah", "date": "2030-03-01", "text": "Legal comments received on chapters one to four; chapter five in drafting."},
+              {"author": "Priya Shah", "date": "2030-02-15", "text": "Chapters one to four sent to legal for comment."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1081", "name": "[A] Weekly note", "status": "in progress", "assignees": ["Priya Shah"], "due": null, "start": null, "status_since": "2030-01-06"},
+            {"task_id": "TKT-1082", "name": "Draft chapter five", "status": "in progress", "assignees": ["Priya Shah"], "due": "2030-03-31", "start": null, "status_since": "2030-02-20"},
+            {"task_id": "TKT-1083", "name": "Send chapters to legal", "status": "complete", "assignees": ["Priya Shah"], "due": "2030-02-15", "start": null, "status_since": "2030-02-15"}
+          ]
+        },
+        {
+          "list_id": "DEMO-408",
+          "name": "Payroll report refresh - Jane Doe",
+          "task_total": 9,
+          "status_task": {
+            "task_id": "TKT-1091", "name": "[G] Weekly note", "status": "in progress",
+            "assignee": "Alex Rivera", "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Jane Doe", "date": "2030-03-09", "text": "No update this week."},
+              {"author": "Jane Doe", "date": "2030-03-02", "text": "Report layout agreed with payroll; data mapping started."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1091", "name": "[G] Weekly note", "status": "in progress", "assignees": ["Alex Rivera"], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1092", "name": "Define column list", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1093", "name": "Map cost centers", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1094", "name": "Build summary tab", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1095", "name": "Add year-to-date view", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1096", "name": "Test with a sample month", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1097", "name": "Write user notes", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1098", "name": "Confirm data feed times", "status": "in progress", "assignees": ["Sam Okafor"], "due": "2030-03-06", "start": null, "status_since": "2030-02-20"},
+            {"task_id": "TKT-1099", "name": "Agree report layout", "status": "complete", "assignees": ["Jane Doe"], "due": "2030-03-01", "start": null, "status_since": "2030-03-01"}
+          ]
+        },
+        {
+          "list_id": "DEMO-409",
+          "name": "Intranet page refresh - Jane Doe",
+          "task_total": 4,
+          "status_task": {
+            "task_id": "TKT-1101", "name": "[G] Weekly note", "status": "to do",
+            "assignee": "Jane Doe", "status_field": null, "color_field": null,
+            "entries": []
+          },
+          "tasks": [
+            {"task_id": "TKT-1101", "name": "[G] Weekly note", "status": "to do", "assignees": ["Jane Doe"], "due": null, "start": null, "status_since": "2030-01-06"},
+            {"task_id": "TKT-1102", "name": "Review current pages", "status": "to do", "assignees": ["Jane Doe"], "due": null, "start": null, "status_since": "2030-01-06"},
+            {"task_id": "TKT-1103", "name": "Collect page owners", "status": "to do", "assignees": ["Jane Doe"], "due": null, "start": null, "status_since": "2030-01-06"},
+            {"task_id": "TKT-1104", "name": "Draft new menu", "status": "to do", "assignees": ["Jane Doe"], "due": null, "start": null, "status_since": "2030-01-06"}
+          ]
+        },
+        {
+          "list_id": "DEMO-410",
+          "name": "Meeting room booking rollout - Alex Rivera",
+          "task_total": 3,
+          "status_task": {
+            "task_id": "TKT-1111", "name": "[G] PAUSED: Weekly note", "status": "in progress",
+            "assignee": "Alex Rivera", "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Alex Rivera", "date": "2030-03-09", "text": "Paused while the booking system contract is renewed; the facilities lead owns the renewal."},
+              {"author": "Alex Rivera", "date": "2030-03-02", "text": "Room sensors installed on floor one; pilot starts after the contract renewal."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1111", "name": "[G] PAUSED: Weekly note", "status": "in progress", "assignees": ["Alex Rivera"], "due": null, "start": null, "status_since": "2030-01-13"},
+            {"task_id": "TKT-1112", "name": "Install room sensors", "status": "complete", "assignees": ["Alex Rivera"], "due": "2030-03-01", "start": null, "status_since": "2030-03-01"},
+            {"task_id": "TKT-1113", "name": "Train floor wardens", "status": "to do", "assignees": ["Alex Rivera"], "due": "2030-04-20", "start": null, "status_since": "2030-02-25"}
+          ]
+        },
+        {
+          "list_id": "DEMO-411",
+          "name": "Expense report form update - Jordan Lee",
+          "task_total": 3,
+          "status_task": {
+            "task_id": "TKT-1121", "name": "[G] Weekly note", "status": "in progress",
+            "assignee": "Jordan Lee", "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Jordan Lee", "date": "2030-03-10", "text": "Form fields agreed with finance; test version goes to 10 users on March 16."},
+              {"author": "Jordan Lee", "date": "2030-03-03", "text": "Draft form reviewed; finance asked for a cost center field."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1121", "name": "[G] Weekly note", "status": "in progress", "assignees": ["Jordan Lee"], "due": null, "start": null, "status_since": "2030-01-20"},
+            {"task_id": "TKT-1122", "name": "Build test form", "status": "in progress", "assignees": ["Jordan Lee"], "due": "2030-03-16", "start": null, "status_since": "2030-03-04"},
+            {"task_id": "TKT-1123", "name": "Agree form fields", "status": "complete", "assignees": ["Jordan Lee"], "due": "2030-03-08", "start": null, "status_since": "2030-03-08"}
+          ]
+        },
+        {
+          "list_id": "DEMO-414",
+          "name": "TEMPLATE - Project schedule",
+          "task_total": 3,
+          "status_task": null,
+          "tasks": [
+            {"task_id": "TKT-1131", "name": "Phase 1", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2029-11-01"},
+            {"task_id": "TKT-1132", "name": "Phase 2", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2029-11-01"},
+            {"task_id": "TKT-1133", "name": "Phase 3", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2029-11-01"}
+          ]
+        }
+      ]
+    },
+    "completed": {
+      "reported_task_total": 4,
+      "counts_reused": false,
+      "lists": [
+        {
+          "list_id": "DEMO-412",
+          "name": "New-starter handbook update - Sam Okafor",
+          "task_total": 4,
+          "status_task": {
+            "task_id": "TKT-1141", "name": "[DONE] Weekly note", "status": "complete",
+            "assignee": "Sam Okafor", "status_field": null, "color_field": null,
+            "entries": [
+              {"author": "Sam Okafor", "date": "2030-02-27", "text": "Handbook published; project closed."}
+            ]
+          },
+          "tasks": [
+            {"task_id": "TKT-1141", "name": "[DONE] Weekly note", "status": "complete", "assignees": ["Sam Okafor"], "due": null, "start": null, "status_since": "2030-02-27"},
+            {"task_id": "TKT-1142", "name": "RAID log", "status": "in progress", "assignees": ["Sam Okafor"], "due": null, "start": null, "status_since": "2029-11-15"},
+            {"task_id": "TKT-1143", "name": "Print handbook copies", "status": "in progress", "assignees": ["Sam Okafor"], "due": "2030-02-20", "start": null, "status_since": "2030-02-01"},
+            {"task_id": "TKT-1144", "name": "Publish handbook", "status": "complete", "assignees": ["Sam Okafor"], "due": "2030-02-27", "start": null, "status_since": "2030-02-27"}
+          ]
+        }
+      ]
+    },
+    "not_started": {
+      "reported_task_total": 3,
+      "counts_reused": false,
+      "lists": [
+        {
+          "list_id": "DEMO-413",
+          "name": "Office relocation planning - Alex Rivera",
+          "task_total": 3,
+          "status_task": null,
+          "tasks": [
+            {"task_id": "TKT-1151", "name": "Shortlist sites", "status": "in progress", "assignees": ["Alex Rivera"], "due": "2030-04-30", "start": null, "status_since": "2030-03-02"},
+            {"task_id": "TKT-1152", "name": "Draft move budget", "status": "in progress", "assignees": ["Alex Rivera"], "due": null, "start": null, "status_since": "2030-03-05"},
+            {"task_id": "TKT-1153", "name": "Plan move dates", "status": "to do", "assignees": [], "due": null, "start": null, "status_since": "2030-02-20"}
+          ]
+        }
+      ]
+    }
+  },
+  "roadmap": [
+    {"row_id": "RM-01", "name": "Quarterly town hall program", "status": "in progress", "owner": "Jordan Lee", "due": "2030-06-30"},
+    {"row_id": "RM-02", "name": "Furniture inventory reconciliation", "status": "in progress", "owner": "Alex Rivera", "due": "2030-05-31"},
+    {"row_id": "RM-03", "name": "New hire welcome pack refresh", "status": "in progress", "owner": "Priya Shah", "due": "2030-04-30"},
+    {"row_id": "RM-04", "name": "Visitor parking redesign", "status": "on hold", "owner": "Sam Okafor", "due": "2030-07-31"},
+    {"row_id": "RM-05", "name": "Training library inventory", "status": "done", "owner": "Priya Shah", "due": "2030-02-28"},
+    {"row_id": "RM-06", "name": "Shared drive clean-up", "status": "on hold", "owner": "Sam Okafor", "due": "2030-09-30"},
+    {"row_id": "RM-07", "name": "Annual handbook review", "status": "in progress", "owner": "Priya Shah", "due": "2030-05-15"},
+    {"row_id": "RM-08", "name": "Meeting room booking rollout", "status": "on hold", "owner": "Alex Rivera", "due": "2030-06-15"},
+    {"row_id": "RM-09", "name": "New-starter handbook update", "status": "in progress", "owner": "Sam Okafor", "due": "2030-02-28"},
+    {"row_id": "RM-10", "name": "Team offsite 2030", "status": "planned", "owner": null, "due": null},
+    {"row_id": "RM-11", "name": "Stationary cupboard  restock", "status": "planned", "owner": null, "due": null},
+    {"row_id": "RM-12", "name": "Intranet page refresh", "status": "in progress", "owner": "Jane Doe", "due": "2030-05-01"}
+  ]
+}

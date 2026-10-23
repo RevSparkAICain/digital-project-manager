@@ -1,0 +1,47 @@
+{
+  "_comment": "Regression baseline for the sankey-chart demo. Run build_spec.py on mapping.json against tickets.xlsx (or a fresh make_demo_data.py output) and every number below must match exactly. All values are synthetic.",
+  "source_file": "tickets.xlsx",
+  "population": 400,
+  "stage_type": {
+    "access": 120,
+    "software": 100,
+    "network": 50,
+    "field": 60,
+    "hardware": 70
+  },
+  "stage_status": {
+    "done": 200,
+    "duplicate": 20,
+    "canceled": 20,
+    "waiting": 40,
+    "in_progress": 55,
+    "queue": 45,
+    "bench": 20
+  },
+  "groups": {
+    "Off the board": 240,
+    "With the customer": 40,
+    "Open: desk work": 100,
+    "Open: bench repairs": 20
+  },
+  "sheet_row_counts_for_reference": {
+    "service_desk": {
+      "rows_with_ticket": 340,
+      "note_rows_without_ticket": 2
+    },
+    "field_requests": {
+      "rows": 80,
+      "in_scope_y": 60,
+      "out_of_scope_n": 15,
+      "in_scope_blank": 5
+    },
+    "escalations": {
+      "rows": 25
+    },
+    "_note": "Escalations is excluded from the population. Every one of its Parent values is a Service Desk ticket, so reading it would double-count 25 tickets and inflate the population from 400 to 425."
+  },
+  "precedence_check": {
+    "duplicates_with_status_closed": 20,
+    "_note": "All 20 Duplicate tickets carry Status Closed. With the Duplicate rule placed after the Closed rule they would land in done, which would read 220 instead of 200."
+  }
+}

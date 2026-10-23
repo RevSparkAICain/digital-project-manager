@@ -1,0 +1,91 @@
+{
+  "title": "Roadshow: New Parts Ordering Portal for the Customer Support team",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Parts orders move to a new portal on June 3, 2030",
+      "subtitle": "Presented by Jordan Lee, IT Service Desk, at the Customer Support team meeting",
+      "notes": "About 30 seconds. Thank the team lead for the slot. Say the one thing to remember: from June 3, 2030, parts orders are placed in the new portal, and the old order form closes that evening. Say you will finish in ten minutes and leave the rest for questions."
+    },
+    {
+      "layout": "bullets",
+      "title": "From June 3, 2030, you place parts orders in the new portal",
+      "bullets": [
+        "Before: a spreadsheet and an emailed order form",
+        "After: one web page where you pick the part and the customer",
+        "The old form stops working at 6:00 PM on June 3, 2030"
+      ],
+      "notes": "About 90 seconds. Show the before and after picture that went out with the IT Bulletin so people recognize it. Read the cutover time aloud. Do not explain how the portal works inside."
+    },
+    {
+      "layout": "bullets",
+      "title": "Customers get a confirmation before the call ends",
+      "bullets": [
+        "The portal shows stock on hand as you type",
+        "A confirmation number appears before you hang up",
+        "No more calling the warehouse to check a part exists"
+      ],
+      "notes": "About 90 seconds. This is the benefit for this team, so lead with the live call. If a listener asks about back-ordered parts, say the portal shows the expected ship date instead of a stock count, and offer to confirm the detail after the meeting."
+    },
+    {
+      "layout": "bullets",
+      "title": "What you will see: a search box and a green Place Order button",
+      "bullets": [
+        "Search by part number or by name",
+        "The customer record fills in from the account number",
+        "Place Order turns on once a part and a customer are chosen"
+      ],
+      "notes": "About 60 seconds. Put the screenshot on this slide in the final deck. Point at the search box, then the button. Mention that the portal looks the same on a laptop and a tablet."
+    },
+    {
+      "layout": "bullets",
+      "title": "Your steps before June 3, 2030",
+      "bullets": [
+        "1. Open the portal link in the IT Bulletin and sign in once",
+        "2. Place one practice order, marked TEST, by May 31, 2030",
+        "3. Tell your lead if the practice order fails"
+      ],
+      "notes": "About 2 minutes. This is the slide people photograph, so keep it readable from the back of the room. Pause after step 2 and say the practice order takes about three minutes."
+    },
+    {
+      "layout": "bullets",
+      "title": "When: practice by May 31, switch on June 3, 2030",
+      "bullets": [
+        "Today: April 2030",
+        "May 31, 2030: practice orders due",
+        "June 3, 2030, 6:00 PM: old order form closes"
+      ],
+      "notes": "About 45 seconds. Reuse the timeline graphic from the email, with today marked and the deadline in the accent color."
+    },
+    {
+      "layout": "bullets",
+      "title": "Not changing: prices, order numbers, rush approvals",
+      "bullets": [
+        "Customer prices stay the same",
+        "Existing order numbers keep working",
+        "Rush orders still go to your team lead"
+      ],
+      "notes": "About 45 seconds. Include this slide because the team asked about rush orders in the pre-brief. It removes a worry that no benefit slide could."
+    },
+    {
+      "layout": "bullets",
+      "title": "Help: the IT Service Desk or Thursday office hours",
+      "bullets": [
+        "One address: servicedesk@acme.example",
+        "Office hours: Thursdays, 10:00 AM to 11:00 AM, until June 27, 2030",
+        "Put PARTS PORTAL in the subject line"
+      ],
+      "notes": "About 30 seconds. Name one path first, then the office hours. Do not list other contacts."
+    },
+    {
+      "layout": "bullets",
+      "title": "Questions",
+      "bullets": [
+        "What if the portal is down during a call?",
+        "Can I still take an order by phone and enter it later?",
+        "Who do I ask about a customer record that looks wrong?"
+      ],
+      "notes": "Leave at least three minutes. Honest answers: if the portal is down, write the order on paper and enter it within one business day; a phone order may be entered later; wrong customer records go to your team lead first. Write down every question you cannot answer and send the list to the comms-copywriter for the FAQ."
+    }
+  ]
+}

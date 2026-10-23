@@ -1,0 +1,299 @@
+{
+ "title": "Where 400 support tickets landed",
+ "subtitle": "ACME Co. service desk, first quarter 2030, by ticket type and then by status",
+ "footer": "Source: tickets.xlsx, Service Desk (340) plus Field Requests in scope (60 of 80). Escalations excluded: same tickets under separate keys. Precedence: Duplicate, then Canceled, then Status.",
+ "prepared_by": "Prepared by Jane Doe, April 1, 2030",
+ "column_titles": [
+  "All tickets",
+  "Ticket type",
+  "Where it stands"
+ ],
+ "columns": [
+  [
+   "total"
+  ],
+  [
+   "access",
+   "software",
+   "network",
+   "field",
+   "hardware"
+  ],
+  [
+   "done",
+   "duplicate",
+   "canceled",
+   "waiting",
+   "in_progress",
+   "queue",
+   "bench"
+  ]
+ ],
+ "label_sides": [
+  "right",
+  "left",
+  "left"
+ ],
+ "labels": {
+  "total": "All tickets",
+  "access": "Access",
+  "software": "Software",
+  "network": "Network",
+  "field": "Field requests",
+  "hardware": "Hardware",
+  "done": "Resolved or closed",
+  "duplicate": "Duplicate",
+  "canceled": "Canceled",
+  "waiting": "Waiting on customer",
+  "in_progress": "In progress",
+  "queue": "New, not started",
+  "bench": "On the repair bench"
+ },
+ "colors": {
+  "total": "total",
+  "access": "neutral",
+  "software": "neutral",
+  "network": "neutral",
+  "field": "neutral",
+  "hardware": "neutral",
+  "done": "complete",
+  "duplicate": "dormant",
+  "canceled": "excluded",
+  "waiting": "blocked",
+  "in_progress": "active",
+  "queue": "pending_light",
+  "bench": "pending_heavy"
+ },
+ "links": [
+  {
+   "source": "total",
+   "target": "access",
+   "value": 120
+  },
+  {
+   "source": "access",
+   "target": "queue",
+   "value": 10
+  },
+  {
+   "source": "access",
+   "target": "done",
+   "value": 70
+  },
+  {
+   "source": "total",
+   "target": "hardware",
+   "value": 70
+  },
+  {
+   "source": "hardware",
+   "target": "queue",
+   "value": 10
+  },
+  {
+   "source": "hardware",
+   "target": "bench",
+   "value": 20
+  },
+  {
+   "source": "hardware",
+   "target": "done",
+   "value": 30
+  },
+  {
+   "source": "total",
+   "target": "software",
+   "value": 100
+  },
+  {
+   "source": "software",
+   "target": "done",
+   "value": 50
+  },
+  {
+   "source": "software",
+   "target": "queue",
+   "value": 10
+  },
+  {
+   "source": "total",
+   "target": "network",
+   "value": 50
+  },
+  {
+   "source": "network",
+   "target": "done",
+   "value": 30
+  },
+  {
+   "source": "network",
+   "target": "waiting",
+   "value": 5
+  },
+  {
+   "source": "access",
+   "target": "canceled",
+   "value": 5
+  },
+  {
+   "source": "access",
+   "target": "waiting",
+   "value": 10
+  },
+  {
+   "source": "software",
+   "target": "duplicate",
+   "value": 10
+  },
+  {
+   "source": "hardware",
+   "target": "waiting",
+   "value": 5
+  },
+  {
+   "source": "access",
+   "target": "in_progress",
+   "value": 15
+  },
+  {
+   "source": "access",
+   "target": "duplicate",
+   "value": 10
+  },
+  {
+   "source": "software",
+   "target": "in_progress",
+   "value": 15
+  },
+  {
+   "source": "network",
+   "target": "in_progress",
+   "value": 10
+  },
+  {
+   "source": "software",
+   "target": "waiting",
+   "value": 10
+  },
+  {
+   "source": "hardware",
+   "target": "canceled",
+   "value": 5
+  },
+  {
+   "source": "software",
+   "target": "canceled",
+   "value": 5
+  },
+  {
+   "source": "network",
+   "target": "queue",
+   "value": 5
+  },
+  {
+   "source": "total",
+   "target": "field",
+   "value": 60
+  },
+  {
+   "source": "field",
+   "target": "canceled",
+   "value": 5
+  },
+  {
+   "source": "field",
+   "target": "in_progress",
+   "value": 15
+  },
+  {
+   "source": "field",
+   "target": "waiting",
+   "value": 10
+  },
+  {
+   "source": "field",
+   "target": "done",
+   "value": 20
+  },
+  {
+   "source": "field",
+   "target": "queue",
+   "value": 10
+  }
+ ],
+ "color_by": "target",
+ "palette": "restrained",
+ "groups": [
+  {
+   "label": "Off the board",
+   "nodes": [
+    "done",
+    "duplicate",
+    "canceled"
+   ],
+   "color": "complete",
+   "note": "no further desk effort"
+  },
+  {
+   "label": "With the customer",
+   "nodes": [
+    "waiting"
+   ],
+   "color": "blocked"
+  },
+  {
+   "label": "Open: desk work",
+   "nodes": [
+    "in_progress",
+    "queue"
+   ],
+   "color": "active",
+   "note": "the queue the desk staffs against"
+  },
+  {
+   "label": "Open: bench repairs",
+   "nodes": [
+    "bench"
+   ],
+   "color": "pending_heavy",
+   "note": "parts-dependent hardware work"
+  }
+ ],
+ "_population": 400,
+ "_stage_counts": {
+  "total": {
+   "total": 400
+  },
+  "type": {
+   "access": 120,
+   "hardware": 70,
+   "software": 100,
+   "network": 50,
+   "field": 60
+  },
+  "status": {
+   "queue": 45,
+   "done": 200,
+   "bench": 20,
+   "waiting": 40,
+   "canceled": 20,
+   "duplicate": 20,
+   "in_progress": 55
+  }
+ },
+ "_endpoint_counts": {
+  "queue": 45,
+  "done": 200,
+  "bench": 20,
+  "waiting": 40,
+  "canceled": 20,
+  "duplicate": 20,
+  "in_progress": 55
+ },
+ "_group_counts": {
+  "Off the board": 240,
+  "With the customer": 40,
+  "Open: desk work": 100,
+  "Open: bench repairs": 20
+ }
+}

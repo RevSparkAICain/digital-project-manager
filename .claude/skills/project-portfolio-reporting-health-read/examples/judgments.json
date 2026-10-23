@@ -1,0 +1,27 @@
+{
+  "judgments_version": 1,
+  "as_of": "2030-03-12",
+  "judged_by": "Priya Shah",
+  "items": [
+    {"project_id": "DEMO-401", "check": "color", "entry_date": "2030-03-11", "verdict": "aligned",
+     "quote": "Speaker list confirmed for the April session"},
+    {"project_id": "DEMO-402", "check": "color", "entry_date": "2030-03-10", "verdict": "aligned",
+     "quote": "Floor three count continues"},
+    {"project_id": "DEMO-402", "check": "status_field", "verdict": "current",
+     "note": "the count on floor three is the work in hand"},
+    {"project_id": "DEMO-403", "check": "color", "entry_date": "2030-03-10", "verdict": "misaligned",
+     "quote": "Blocked until the department lists arrive; no date yet."},
+    {"project_id": "DEMO-403", "check": "status_field", "verdict": "stale",
+     "note": "describes kick-off; the project is past it"},
+    {"project_id": "DEMO-404", "check": "color", "entry_date": "2030-02-12", "verdict": "aligned",
+     "quote": "two layout options drafted for review"},
+    {"project_id": "DEMO-405", "check": "color", "entry_date": "2030-03-09", "verdict": "aligned",
+     "quote": "checking 120 course records against the shelf list"},
+    {"project_id": "DEMO-406", "check": "hold", "narrative_records_hold": true,
+     "dependency_and_owner_named": true, "resumed_on": null},
+    {"project_id": "DEMO-410", "check": "color", "entry_date": "2030-03-09", "verdict": "aligned",
+     "quote": "Paused while the booking system contract is renewed"},
+    {"project_id": "DEMO-411", "check": "color", "entry_date": "2030-03-10", "verdict": "aligned",
+     "quote": "test version goes to 10 users on March 16"}
+  ]
+}

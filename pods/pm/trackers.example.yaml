@@ -1,0 +1,98 @@
+# Tracker profiles for the pm pod, shown for the fictional ACME Co.
+# Copy this file to trackers.yaml in the same folder and keep one entry per connected tracker.
+# The connecting-a-tracker skill adds a profile for any tracker reachable over MCP.
+# pm-config.yaml names the active profile in its tracker field.
+#
+# Fields:
+#   name               profile name used by pm-config.yaml
+#   mcp_server         server name as `claude mcp list` shows it
+#   specialist         skill that owns writes to this tracker, or none
+#   concepts           the tracker's word or field for each project concept, or none
+#   read_tools         tools for the read-only probe and the read-back
+#   write_tools        tools that create or change items
+#   gaps               concepts the tracker lacks, and what the skills do instead, one list
+#                      item each: `- <concept>: <what the skills do instead>`; [] when none
+#   default_container  where a new item lands when no project is named
+
+profiles:
+  - name: clickup
+    mcp_server: clickup
+    specialist: updating-trackers
+    concepts:
+      container: List, inside a Folder and a Space
+      item: Task
+      status: Status
+      assignee: Assignees
+      due_date: Due date
+      milestone: a task set as a Milestone
+      dependency: Dependencies (waiting on and blocking)
+    read_tools: []                       # the specialist skill chooses the tools
+    write_tools: []
+    gaps: []
+    default_container: ACME Projects / Intake
+
+  - name: linear
+    mcp_server: linear
+    specialist: updating-trackers
+    concepts:
+      container: Project, owned by a Team
+      item: Issue
+      status: Workflow state
+      assignee: Assignee
+      due_date: Due date
+      milestone: Project milestone
+      dependency: Blocked by and blocks relations
+    read_tools: []                       # the specialist skill chooses the tools
+    write_tools: []
+    gaps: []
+    default_container: OPS
+
+  - name: jira
+    mcp_server: jira                     # a claude.ai connector shows as "claude.ai Atlassian MCP"
+    specialist: updating-trackers
+    concepts:
+      container: Project (key), inside a site
+      item: Issue
+      status: Status, changed only through a workflow transition
+      assignee: Assignee (account ID)
+      due_date: Due date
+      milestone: an Epic, or a fix version
+      dependency: Issue links (blocks and is blocked by)
+    read_tools: []                       # the specialist skill chooses the tools
+    write_tools: []
+    gaps:
+      - dependency: the Atlassian server has no link tool; record the dependency in a comment on both issues
+      - milestone: use an Epic; fix versions are set in the Jira UI
+    default_container: OPS
+
+  - name: asana
+    mcp_server: asana
+    specialist: updating-trackers
+    concepts:
+      container: Project, split into Sections, inside a Workspace and a Team
+      item: Task
+      status: Completed, plus the Section or a status custom field
+      assignee: Assignee
+      due_date: Due date
+      milestone: a task marked as a Milestone
+      dependency: Dependencies (blocked by and blocking)
+    read_tools: []                       # the specialist skill chooses the tools
+    write_tools: []
+    gaps: []
+    default_container: ACME Projects / Intake
+
+  - name: monday
+    mcp_server: monday
+    specialist: updating-trackers
+    concepts:
+      container: Board, split into Groups, inside a Workspace
+      item: Item
+      status: the board's Status column
+      assignee: the board's People column
+      due_date: the board's Date column
+      milestone: an item in a Milestones group, or a milestone column
+      dependency: the board's Dependency column, when the board has one
+    read_tools: []                       # the specialist skill chooses the tools
+    write_tools: []
+    gaps: []
+    default_container: ACME Projects / Intake

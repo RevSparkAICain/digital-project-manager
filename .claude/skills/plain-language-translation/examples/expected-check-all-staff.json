@@ -1,0 +1,18 @@
+{
+  "file": "draft-all-staff.md",
+  "words": 150,
+  "sentences": 15,
+  "syllables": 191,
+  "avg_sentence_words": 10.0,
+  "fk_grade": 3.3,
+  "target_grade": 8.0,
+  "grade_ok": true,
+  "avg_sentence_ok": true,
+  "long_paragraphs": [],
+  "unexpanded_acronyms": [],
+  "vague_time": [],
+  "banned_words": "checked",
+  "banned_hits": [],
+  "em_dashes": 0,
+  "status": "pass"
+}

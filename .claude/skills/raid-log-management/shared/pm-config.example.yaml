@@ -1,0 +1,36 @@
+# Settings for the pm pod, shown with values for the fictional ACME Co.
+# Copy this file to pm-config.yaml in the same folder and put your own values in.
+# Each skill reads pm-config.yaml when it exists and falls back to this example.
+# Name roles here, never a person, apart from prepared_by. Tracker connections live in trackers.yaml.
+# pm-config.yaml stays out of git (.gitignore).
+
+setup_complete: false                    # getting-started sets true after its final check
+setup_stage: 0                           # last onboarding stage finished; getting-started resumes after it
+prepared_by: ""                          # the PM's own name, for "Prepared by" lines and the notes author
+
+output_dir: <WORKSPACE_ROOT>/deliverables/projects   # business cases, charters, RAID logs, checklists
+
+approval_gate: the sponsor review        # the gate a business case and a charter go to
+escalation_role: the project sponsor     # who a RAID escalation goes to
+
+raid:
+  store: markdown                        # markdown, xlsx or tracker
+  review_cadence: weekly                 # how often the RAID log is reviewed
+
+business_case:
+  template: ""                           # your own blank business case template; empty means generate one
+  profile: ""                            # anchors profile for that template; empty means the example profile
+
+tracker: ""                              # default profile name in trackers.yaml; empty means ask the user
+project_trackers: {}                     # optional: project name -> profile name, when projects live in
+                                         # different trackers; a project not listed uses `tracker`
+project_containers: {}                   # optional: project name -> where its new items land, when that
+                                         # is not a container named after the project
+mirror_tracker: ""                       # optional: profile name that also gets every row a transcript
+mirror_container: ""                     # writes, in this container; empty means no mirror
+
+mail:                                    # optional; see docs/mail.md
+  mcp_server: ""                         # mail connector as `claude mcp list` shows it; empty means mail is off
+  read_tools: []                         # exact tool names the read-only probe found
+  read_scope: {}                         # per project: the folders, labels or search terms the agent may read
+  write: drafts_only                     # drafts_only or off; the agent never sends

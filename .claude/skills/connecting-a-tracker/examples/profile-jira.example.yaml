@@ -1,0 +1,29 @@
+# Illustrative profile for a Jira connection at the fictional ACME Co.
+# The tool names below are illustrative. Replace them with the exact names that the
+# read-only probe lists for the connected server.
+
+profiles:
+  - name: jira-generic
+    mcp_server: jira
+    specialist: none
+    concepts:
+      container: Project
+      item: Issue
+      status: Status (workflow transition)
+      assignee: Assignee
+      due_date: Due date
+      milestone: Version (or none when the project uses no versions)
+      dependency: Issue links (blocks and is blocked by)
+    read_tools:
+      - list projects
+      - search issues
+      - get issue
+    write_tools:
+      - create issue
+      - update issue
+      - transition issue
+      - add comment
+      - link issues
+    gaps:
+      - milestone: a project without versions has no dated milestone; use an issue of type Milestone with a due date
+    default_container: DEMO

@@ -1,0 +1,19 @@
+# Your settings (getting-started writes the first three)
+pods/pm/pm-config.yaml
+pods/pm/trackers.yaml
+pods/meetings/meetings-config.yaml
+
+# Transcripts and everything made from them
+transcripts/
+deliverables/
+work/
+
+# Local Claude Code settings and any local secrets
+.claude/settings.local.json
+.env
+.env.*
+
+# Build files
+__pycache__/
+*.pyc
+.DS_Store

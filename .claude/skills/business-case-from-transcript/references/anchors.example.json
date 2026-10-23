@@ -1,0 +1,25 @@
+{
+  "fields": {
+    "project": "Project",
+    "sponsor": "Sponsor",
+    "prepared_by": "Prepared by",
+    "date": "Date"
+  },
+  "sections": {
+    "summary": {"heading": "Summary", "placeholder": "Summarize the request"},
+    "problem": {"heading": "Problem or opportunity", "placeholder": "Describe the problem or opportunity"},
+    "options": {"heading": "Options considered", "placeholder": "Describe each option considered"},
+    "recommendation": {"heading": "Recommended option", "placeholder": "Name the recommended option"},
+    "costs": {"heading": "Costs and benefits", "placeholder": "List each cost and benefit"},
+    "risks": {"heading": "Risks", "placeholder": "List the main risks"},
+    "timeline": {"heading": "Timeline", "placeholder": "List the milestones"},
+    "approval": {"heading": "Approval", "placeholder": "Record who approves the case"}
+  },
+  "tables": {
+    "costs": {"header": ["Item", "Type", "Amount", "Timing"]},
+    "risks": {"header": ["Risk", "Likelihood", "Impact", "Score", "Response", "Owner"]},
+    "timeline": {"header": ["Milestone", "Target date", "Owner"]},
+    "approval": {"header": ["Role", "Name", "Decision", "Date"]}
+  },
+  "registers": {"sources": "Sources used", "missing": "Missing information"}
+}

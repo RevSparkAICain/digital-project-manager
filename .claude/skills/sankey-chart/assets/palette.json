@@ -1,0 +1,60 @@
+{
+  "_comment": "Palette definitions used by the sankey-chart skill. Each entry is a recipe that points into the brand file (the project's brand/brand.json, or the shared/ copy), never a literal color, so a change to the brand file reaches every chart. Recipes: {\"ref\": dotted path}, optional \"tint\" (toward white) or \"shade\" (toward black) from 0 to 1, optional \"or\" fallback recipe when the ref is unset. Charts reference role names or cat:<n>.",
+
+  "default": "restrained",
+
+  "palettes": {
+    "restrained": {
+      "_use": "Default for internal deliverables. Primary color as the anchor, text and muted grays, generated tints. Comfortable up to about seven endpoint buckets when tints are spread.",
+      "roles": {
+        "complete": {"ref": "colors.primary"},
+        "active": {"ref": "colors.primary", "shade": 0.3},
+        "blocked": {"ref": "colors.text"},
+        "pending_heavy": {"ref": "colors.textMuted"},
+        "pending_light": {"ref": "colors.textMuted", "tint": 0.4},
+        "dormant": {"ref": "colors.primary", "tint": 0.55},
+        "excluded": {"ref": "colors.divider", "shade": 0.1},
+        "neutral": {"ref": "colors.divider"},
+        "total": {"ref": "colors.text"},
+        "text": {"ref": "colors.text"},
+        "text_muted": {"ref": "colors.textMuted"},
+        "text_tertiary": {"ref": "colors.textMuted", "tint": 0.3},
+        "background": {"ref": "colors.background"}
+      },
+      "categorical": [
+        {"ref": "colors.primary"},
+        {"ref": "colors.text"},
+        {"ref": "colors.textMuted"},
+        {"ref": "colors.primary", "tint": 0.5},
+        {"ref": "colors.divider", "shade": 0.1}
+      ]
+    },
+
+    "extended": {
+      "_use": "More separation for charts past six or seven endpoint buckets. Uses brand accents and status colors when brand.json defines them, falling back to tints and shades of the primary and text colors when it does not. Record why it was chosen in the chart footer or the hand-off note.",
+      "roles": {
+        "complete": {"ref": "status.good", "or": {"ref": "colors.primary"}},
+        "active": {"ref": "colors.accent1", "or": {"ref": "colors.primary", "shade": 0.35}},
+        "blocked": {"ref": "status.warning", "or": {"ref": "colors.text"}},
+        "pending_heavy": {"ref": "colors.accent2", "or": {"ref": "colors.text", "tint": 0.25}},
+        "pending_light": {"ref": "colors.accent3", "or": {"ref": "colors.primary", "tint": 0.4}},
+        "dormant": {"ref": "colors.textMuted", "tint": 0.45},
+        "excluded": {"ref": "colors.accent1", "tint": 0.45, "or": {"ref": "colors.primary", "tint": 0.65}},
+        "neutral": {"ref": "colors.divider"},
+        "total": {"ref": "colors.text"},
+        "text": {"ref": "colors.text"},
+        "text_muted": {"ref": "colors.textMuted"},
+        "text_tertiary": {"ref": "colors.textMuted", "tint": 0.3},
+        "background": {"ref": "colors.background"}
+      },
+      "categorical": [
+        {"ref": "colors.primary"},
+        {"ref": "colors.accent1", "or": {"ref": "colors.text"}},
+        {"ref": "colors.accent2", "or": {"ref": "colors.primary", "tint": 0.5}},
+        {"ref": "colors.accent3", "or": {"ref": "colors.textMuted"}},
+        {"ref": "status.good", "or": {"ref": "colors.primary", "shade": 0.35}},
+        {"ref": "status.warning", "or": {"ref": "colors.textMuted", "tint": 0.45}}
+      ]
+    }
+  }
+}

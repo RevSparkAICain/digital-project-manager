@@ -1,0 +1,79 @@
+{
+  "fields": {
+    "project": "Expense system replacement",
+    "sponsor": "Alex Rivera, Finance Director",
+    "prepared_by": "Jane Doe",
+    "date": "March 12, 2030"
+  },
+  "sections": {
+    "summary": [
+      "Approve moving expense reporting to a hosted expense service. The first year costs $60,000: $36,000 to implement once and $24,000 for the first year of subscription. Retiring the old tool saves $9,000 a year in server support from the year after go-live.",
+      "The decision sought is approval of the business case through the sponsor review."
+    ],
+    "problem": [
+      "Expense reports are entered twice, once in the current tool and once in the ledger. The finance team spends about two days at every month end fixing the mismatches.",
+      "Staff wait about three weeks to be repaid, and the tool is slow enough that people file late. The tool runs on a server past its support date, and keeping that server supported costs $9,000 a year."
+    ],
+    "options": [
+      "Keep the current tool. This adds no new cost, but the double entry and the server support cost stay.",
+      "Move to a hosted expense service. It posts straight to the ledger, which ends the double entry. The vendor quote prices implementation at $36,000 one time and the subscription at $24,000 a year.",
+      "Build a tool in house. It is possible, but IT has no people free this year and would own every fix afterward, so IT does not recommend it."
+    ],
+    "recommendation": [
+      "Move to a hosted expense service. It posts straight to the ledger, which ends the double entry, and it retires the unsupported server, which removes $9,000 a year in support cost from the year after go-live.",
+      "Keeping the current tool fixes neither problem. Building in house needs people IT does not have this year."
+    ],
+    "costs": [
+      "The first year costs $60,000, the implementation plus one year of subscription. The same figure is the budget carried into the charter.",
+      "The vendor quote prices the first three years only. The subscription price after year three is TBD: Priya Shah will ask the vendor."
+    ],
+    "risks": [
+      "Receipts are kept for seven years. It is not confirmed that the retention setting on the hosted service can be set to seven years. If it cannot, receipts would be exported to ACME storage. Sam Okafor will confirm it with the vendor before anything is signed."
+    ],
+    "timeline": [
+      "Approval of the business case is targeted for April 2, 2030, and the charter for April 16, 2030. A pilot with the finance team follows on June 4, 2030, go-live on September 3, 2030, the end of hypercare on September 17, 2030 and close-out on October 1, 2030."
+    ],
+    "approval": [
+      "The case goes to the sponsor review. The sponsor is Alex Rivera. No decision has been recorded yet."
+    ]
+  },
+  "tables": {
+    "costs": [
+      ["Implementation", "Cost, one time", "$36,000", "First year"],
+      ["Hosted service subscription", "Cost, yearly", "$24,000", "Each year from the first"],
+      ["First-year total", "Cost", "$60,000", "First year"],
+      ["Retired server support", "Saving, yearly", "$9,000", "From the year after go-live"],
+      ["Subscription after year three", "Cost, yearly", "TBD: price not in the quote", "After year three"]
+    ],
+    "risks": [
+      ["Receipt retention setting on the hosted service is unconfirmed (receipts are kept seven years)", "3", "4", "12", "Confirm the setting with the vendor before signing; if it cannot be set, export receipts to ACME storage", "Sam Okafor"]
+    ],
+    "timeline": [
+      ["Business case approved", "April 2, 2030", "TBD: owner not named"],
+      ["Charter approved", "April 16, 2030", "TBD: owner not named"],
+      ["Pilot with the finance team", "June 4, 2030", "TBD: owner not named"],
+      ["Go-live", "September 3, 2030", "TBD: owner not named"],
+      ["Hypercare ends", "September 17, 2030", "TBD: owner not named"],
+      ["Close-out", "October 1, 2030", "TBD: owner not named"]
+    ],
+    "approval": [
+      ["Sponsor", "Alex Rivera", "TBD", "TBD"],
+      ["Project lead", "Jane Doe", "TBD", "TBD"]
+    ]
+  },
+  "sources": [
+    "transcript-expense-scoping-call.txt (00:00:41 to 00:01:35): problem, double entry, month-end effort, repayment time",
+    "transcript-expense-scoping-call.txt (00:01:35): server support cost and when the saving starts",
+    "transcript-expense-scoping-call.txt (00:02:10 to 00:03:40): the three options and why two lost",
+    "transcript-expense-scoping-call.txt (00:04:05 to 00:04:52): implementation, subscription and first-year totals",
+    "transcript-expense-scoping-call.txt (00:05:10): the quote does not price after year three",
+    "transcript-expense-scoping-call.txt (00:05:48 to 00:06:30): retention risk, owner, likelihood and impact",
+    "transcript-expense-scoping-call.txt (00:06:30 to 00:07:30): milestone dates",
+    "transcript-expense-scoping-call.txt (00:08:05): routing to the sponsor review"
+  ],
+  "missing": [
+    "Subscription price after year three: the vendor quote covers three years only; Priya Shah is asking the vendor.",
+    "Owners for each milestone were not named on the call; the timeline shows TBD for each.",
+    "Approval decision and date: no decision exists yet, so both stay TBD."
+  ]
+}

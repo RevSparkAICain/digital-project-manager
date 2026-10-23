@@ -1,0 +1,33 @@
+# Settings for the meetings pod, shown with values for the fictional ACME Co.
+# Copy this file to meetings-config.yaml in the same folder and put your own values in.
+# Each skill reads meetings-config.yaml when it exists and falls back to this example.
+# Name roles here, never a person. Committee members live in the roster file named below.
+
+output_dir: <WORKSPACE_ROOT>/deliverables/meeting-notes   # where notes and minutes are saved
+
+notes:
+  doc_type: Executive Meeting Notes      # category and title suffix in the document properties
+  type_label: Executive Notes            # label printed under the title; must differ from doc_type
+  file_pattern: "Notes - {meeting} - {DDMMMYY}"   # " ({HHMM})" is added only when two meetings share a date
+
+agent_address:                           # names a speaker uses to give the agent an instruction during a call
+  - "Chief of Staff"
+  - Chief
+  - AI
+
+ingest:                                  # where transcripts arrive; the getting-started skill sets this
+  inbox: <WORKSPACE_ROOT>/transcripts/inbox          # new transcripts land here; a synced OneDrive, Drive or Dropbox folder works
+  log: <WORKSPACE_ROOT>/transcripts/processed.log    # one line per handled transcript; files in the inbox are never moved or deleted
+  file_types: [".vtt", ".docx", ".txt", ".md"]
+  check_every: 15m                       # how often /loop or the scheduled task checks the inbox
+  pull:                                  # optional: copy new transcripts in from a meeting connector before each check
+    enabled: false
+    mcp_server: ""                       # server name as `claude mcp list` shows it
+    read_tools: []                       # exact tool names the read-only probe found
+    scope: ""                            # which meetings to pull, for example "series: Weekly Ops Sync"
+    since: ""                            # ISO date; pull only meetings held on or after this date
+
+trackers:
+  clickup_list: ACME Projects / Intake   # default ClickUp list for a new task
+  linear_team: OPS                       # default Linear team for a new issue
+

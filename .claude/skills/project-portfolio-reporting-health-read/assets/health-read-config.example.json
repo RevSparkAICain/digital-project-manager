@@ -1,0 +1,143 @@
+{
+  "config_version": "2030.1",
+  "title": "ACME project portfolio health read",
+  "executive_reader_role": "VP of Operations",
+  "prepared_by": "Priya Shah",
+  "grade_statement": {
+    "measures": "Whether status reporting is current, new, consistent and correctly placed.",
+    "does_not_measure": "Whether any project will finish on time."
+  },
+  "tracker": {
+    "kind": "clickup",
+    "workspace_id": "<workspace-id>",
+    "space_id": "<space-id>",
+    "folders": {
+      "active": {"id": "<active-folder-id>", "name": "Projects - In Progress"},
+      "completed": {"id": "<completed-folder-id>", "name": "Projects - Completed"},
+      "not_started": {"id": "<not-started-folder-id>", "name": "Projects - Not Started"}
+    },
+    "roadmap_list_id": "<roadmap-list-id>",
+    "list_url_template": "https://tracker.example.internal/list/{list_id}",
+    "status_task_match": "Weekly note",
+    "comments_limit": 5,
+    "bot_authors": ["Tracker Automation"],
+    "automated_prefixes": ["[auto]"],
+    "template_list_prefixes": ["TEMPLATE - "]
+  },
+  "leads": [
+    {"name": "Jane Doe", "aliases": ["Jane"]},
+    {"name": "Alex Rivera", "aliases": ["Alex"]},
+    {"name": "Priya Shah", "aliases": ["Priya"]},
+    {"name": "Jordan Lee", "aliases": ["Jordan"]},
+    {"name": "Sam Okafor", "aliases": ["Sam"]}
+  ],
+  "lead_separator": " - ",
+  "status_window_days": {"current": 10, "aging": 20},
+  "status_map": {
+    "to do": "not_started",
+    "ready": "not_started",
+    "in progress": "in_progress",
+    "on hold": "in_progress",
+    "complete": "complete",
+    "closed": "closed"
+  },
+  "first_status": "to do",
+  "hold_statuses": ["on hold"],
+  "queued_statuses": ["ready"],
+  "state_encoding": {
+    "color_markers": {"green": ["[G]"], "amber": ["[A]"], "red": ["[R]"]},
+    "hold_prefix": "PAUSED: ",
+    "completion_marker": "[DONE]",
+    "color_field_used": false,
+    "hold_contradicting_colors": ["green"]
+  },
+  "newness": {
+    "repeat_lookback": 2,
+    "placeholder_phrases": ["no update", "same as last week", "nothing new", "see previous"],
+    "placeholder_max_words": 8
+  },
+  "roadmap": {
+    "pairs_file": "roadmap-project-pairs.example.md",
+    "strip_leading": "*",
+    "status_map": {
+      "in progress": "active",
+      "done": "complete",
+      "planned": "not_started",
+      "on hold": "held"
+    }
+  },
+  "cleanup": {
+    "parked_days": 60,
+    "scaffold_min_rows": 5,
+    "raid_task_match": "RAID log",
+    "subtitle": "Record corrections in your own lists. Each line is something you can change yourself, and each project name links to its list. This page is about the record, not the work.",
+    "buckets": {
+      "parked": {
+        "label": "Started, then idle",
+        "definition": "In progress for more than 60 days.",
+        "remedy": "Move it on, close it, or record why it waits."
+      },
+      "no_date_no_owner": {
+        "label": "Started with no date and no owner",
+        "definition": "In progress with neither a due date nor an assignee.",
+        "remedy": "Add an owner and a due date, or move it back to not started."
+      },
+      "overdue": {
+        "label": "Past its due date",
+        "definition": "In progress or queued, with a due date before this read.",
+        "remedy": "Finish it, close it, or set the date the team now expects."
+      },
+      "no_owner": {
+        "label": "Active with no owner",
+        "definition": "In progress or queued, with no assignee.",
+        "remedy": "Assign it to the person doing the work."
+      },
+      "not_started_past_due": {
+        "label": "Not started, past its date",
+        "definition": "Still in a not-started status with a due date before this read.",
+        "remedy": "Start it, re-date it, or close it."
+      },
+      "scaffold": {
+        "label": "Unused setup rows",
+        "definition": "A block of not-started rows with no date and no owner.",
+        "remedy": "Remove the rows you will not use, or date and assign the ones you will."
+      },
+      "open_raid": {
+        "label": "RAID log still open",
+        "definition": "A RAID log task left open in a finished project.",
+        "remedy": "Close the log, or move any live item to the project that owns it now."
+      },
+      "past_due_open": {
+        "label": "Open and past due in a finished project",
+        "definition": "An open task with a due date before this read, in a finished project.",
+        "remedy": "Close it, or move it to the project that owns the work now."
+      },
+      "open_in_finished": {
+        "label": "Open in a finished project",
+        "definition": "Any other open task in a finished project.",
+        "remedy": "Close it, or move it to the project that owns the work now."
+      }
+    }
+  },
+  "grading": {
+    "points": {
+      "aging": 1,
+      "stale": 2,
+      "absent": 2,
+      "repeated": 2,
+      "placeholder": 2,
+      "misaligned": 2,
+      "minor": 1,
+      "conflicting": 2
+    },
+    "project_bands": {"A": 0, "B": 1, "C": 3, "D": 5},
+    "portfolio_lines": {
+      "f_currency_fail_over": 0.5,
+      "d_currency_fail_over": 0.3,
+      "d_color_fail_over": 0.5,
+      "c_currency_fail_over": 0.1,
+      "c_newness_fail_over": 0.2,
+      "c_color_or_records_over": 0.2
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$comment": "NEUTRAL PLACEHOLDER VALUES. This file is the single source of brand values for the agent team (the deliverable-review skill reads brand values from here and nowhere else). Run the brand-extract skill to replace it with values learned from your own collateral; it regenerates brand/tokens.css alongside it and writes the brand-extract skill.",
+  "meta": {
+    "name": "Placeholder brand",
+    "organization": "ACME Co.",
+    "placeholder": true,
+    "version": "0.0.0",
+    "generatedBy": null
+  },
+  "colors": {
+    "primary": "#1F6FEB",
+    "text": "#222222",
+    "textMuted": "#666666",
+    "background": "#FFFFFF",
+    "surface": "#F2F2F2",
+    "divider": "#D9D9D9",
+    "link": "#1F6FEB"
+  },
+  "status": {
+    "$comment": "Optional functional status colors. Left empty in the placeholder; when empty, reviewers accept a conventional red, amber, or green used strictly as a status cue and kept off primary brand elements.",
+    "good": null,
+    "warning": null,
+    "critical": null
+  },
+  "fonts": {
+    "$comment": "web is a CSS font stack for HTML and SVG output. office is a single installed face for .pptx, .docx and .xlsx, which cannot use a fallback stack.",
+    "web": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+    "webMono": "ui-monospace, \"Cascadia Mono\", Consolas, Menlo, monospace",
+    "office": "Arial",
+    "officeHeading": "Arial"
+  },
+  "usage": {
+    "primaryAsAccent": true,
+    "statusColorsOffBrandElements": true,
+    "linkUnderline": false
+  },
+  "avoid": [
+    "colors not listed in this file",
+    "gradients",
+    "drop shadows",
+    "3D effects"
+  ],
+  "logo": {
+    "file": null,
+    "minWidthPx": null,
+    "rules": []
+  },
+  "templates": {
+    "pptx": null,
+    "docx": null,
+    "xlsx": null
+  }
+}

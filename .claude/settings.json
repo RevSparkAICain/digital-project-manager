@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Agent",
+      "mcp__claude_ai_ClickUp",
+      "mcp__claude_ai_Linear",
+      "mcp__claude_ai_Atlassian_MCP",
+      "mcp__claude_ai_Asana",
+      "mcp__claude_ai_monday_com"
+    ],
+    "deny": [
+      "mcp__claude_ai_Atlassian_MCP__executeWrite",
+      "mcp__claude_ai_Atlassian_MCP__executeDestructive",
+      "mcp__claude_ai_monday_com__all_api_write",
+      "mcp__claude_ai_monday_com__all_monday_api",
+      "mcp__claude_ai_monday_com__execute_code",
+      "mcp__claude_ai_monday_com__create_notification",
+      "mcp__claude_ai_monday_com__submit_bug_or_feature_request",
+      "mcp__claude_ai_Linear__merge_diff"
+    ]
+  }
+}

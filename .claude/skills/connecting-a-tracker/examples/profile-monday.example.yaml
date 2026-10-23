@@ -1,0 +1,27 @@
+# Illustrative profile for a Monday.com connection at the fictional ACME Co.
+# The tool names below are illustrative. Replace them with the exact names that the
+# read-only probe lists for the connected server.
+
+profiles:
+  - name: monday-generic
+    mcp_server: monday
+    specialist: none
+    concepts:
+      container: Board
+      item: Item
+      status: a Status column
+      assignee: a People column
+      due_date: a Date column
+      milestone: none
+      dependency: a Dependency column
+    read_tools:
+      - list boards
+      - get board items
+      - get item
+    write_tools:
+      - create item
+      - change column values
+      - create update
+    gaps:
+      - milestone: the tracker has no milestone type; use a group named for the milestone and put its items in it
+    default_container: ACME Projects board
