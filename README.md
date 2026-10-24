@@ -30,7 +30,7 @@ make that high priority" and it shows up as an instruction in the next reconcili
    `digital-project-manager-main`), or clone it:
 
    ```
-   git clone https://github.com/strategenixsolutions-ux/digital-project-manager.git
+   git clone https://github.com/RevSparkAICain/digital-project-manager.git
    ```
 
 3. **Install the Python packages** the notes and decks use:
